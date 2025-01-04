@@ -1,9 +1,11 @@
 body {
-  background-color: HotPink;
+  background-color: HotPink; /* Keep the vibrant background */
 }
 h1 {
-  color: HotPink;
+  color: White; /* High contrast for headings */
+  font-family: Arial, sans-serif;
 }
 p {
-  color: HotPink;
+  color: Black; /* High contrast for paragraphs */
+  font-family: Georgia, serif;
 }
