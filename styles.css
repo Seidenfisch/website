@@ -12,6 +12,12 @@ body {
   color: #1f2937;
   line-height: 1.6;
   padding: 2rem;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+  color: #f1f5f9;
 }
 
 header {
@@ -24,6 +30,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background 0.5s;
+}
+
+body.dark-mode header {
+  background-color: #111827;
+  border-bottom: 1px solid #334155;
 }
 
 header nav a {
@@ -48,12 +60,17 @@ main {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: background 0.5s;
+}
+
+body.dark-mode main {
+  background: #1e293b;
 }
 
 h1, h2 {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #0f172a;
+  color: inherit;
 }
 
 p {
@@ -68,4 +85,37 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #6b7280;
+}
+
+body.dark-mode footer {
+  border-top: 1px solid #334155;
+  color: #94a3b8;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  background: #0284c7;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
