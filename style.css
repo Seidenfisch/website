@@ -111,3 +111,29 @@ footer {
   background-color: #eee;
   color: #333;
 }
+
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.8em;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #1da1f2;
+  transform: translateY(-5px) scale(1.2);
+}
+
+.light-mode .social-icons a {
+  color: #333;
+}
+
+.light-mode .social-icons a:hover {
+  color: #0077b6;
+}
