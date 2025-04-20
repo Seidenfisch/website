@@ -1,31 +1,30 @@
 
 /* Basic resets and typography omitted for brevity */
-/* Bike gallery and table styles */
+/* Bike gallery and side-by-side table styles */
 .bike-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.bike-item img {
-  width: 100%;
-  height: auto;
+.bike-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bike-content img {
+  width: 50%;
+  max-width: 300px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.bike-item p {
-  text-align: center;
-  margin-top: 0.5rem;
-  font-weight: 500;
-}
-
 .bike-specs {
-  width: 100%;
-  margin-top: 1rem;
-  border-collapse: collapse;
+  width: 50%;
   font-size: 0.9rem;
+  border-collapse: collapse;
 }
 
 .bike-specs th,
@@ -50,4 +49,23 @@ body.dark-mode .bike-specs th {
 
 body.dark-mode .bike-specs td {
   color: #94a3b8;
+}
+
+.bike-item p {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .bike-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .bike-content img,
+  .bike-specs {
+    width: 100%;
+  }
 }
