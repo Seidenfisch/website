@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <title>Photo Gallery</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="photos.html">Photos</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="photos.html">Photos</a>
+    </div>
     <button id="theme-toggle">🌙</button>
   </nav>
   <main>
@@ -26,54 +28,16 @@
           <tr><td>Price</td><td>$100</td></tr>
         </table>
       </div>
-      <div class="gallery-item">
-        <img src="path/to/photo2.jpg" alt="City Sunset" class="gallery-img">
-        <table class="spec-table">
-          <tr><th>Feature</th><th>Details</th></tr>
-          <tr><td>Name</td><td>City Sunset</td></tr>
-          <tr><td>Size</td><td>1920x1080</td></tr>
-          <tr><td>Type</td><td>Photo Print</td></tr>
-          <tr><td>Price</td><td>$120</td></tr>
-        </table>
-      </div>
-      <div class="gallery-item">
-        <img src="path/to/photo3.jpg" alt="Mountain Hike" class="gallery-img">
-        <table class="spec-table">
-          <tr><th>Feature</th><th>Details</th></tr>
-          <tr><td>Name</td><td>Mountain Hike</td></tr>
-          <tr><td>Size</td><td>1920x1080</td></tr>
-          <tr><td>Type</td><td>Photo Print</td></tr>
-          <tr><td>Price</td><td>$150</td></tr>
-        </table>
-      </div>
     </div>
   </main>
-
-<footer>
-  <p>&copy; 2025 Your Name. All rights reserved.</p>
-  <div class="social-icons">
-    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="mailto:youremail@example.com" target="_blank" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
-</footer>
-
-
-  <div id="modal" class="modal">
-    <span id="close">&times;</span>
-    <div id="spinner" class="spinner"></div>
-    <img id="modal-img" class="modal-content" style="display: none;">
-    <div id="caption" class="caption"></div>
-    <div id="prev" class="nav-arrow">&#10094;</div>
-    <div id="next" class="nav-arrow">&#10095;</div>
-    <div id="thumbnails" class="thumbnails"></div>
-  </div>
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:youremail@example.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
