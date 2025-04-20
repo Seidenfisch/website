@@ -1,11 +1,58 @@
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: HotPink; /* Keep the vibrant background */
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
 }
-h1 {
-  color: White; /* High contrast for headings */
-  font-family: Arial, sans-serif;
+
+header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
 }
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #0056b3;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
 p {
-  color: Black; /* High contrast for paragraphs */
-  font-family: Georgia, serif;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
 }
