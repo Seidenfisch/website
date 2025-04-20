@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const toggleButton = document.getElementById('dark-mode-toggle');
 
-  // Check localStorage for dark mode preference
   if (localStorage.getItem('darkMode') === 'enabled') {
     document.body.classList.add('dark-mode');
   }
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 
-    // Save or remove the preference
     if (document.body.classList.contains('dark-mode')) {
       localStorage.setItem('darkMode', 'enabled');
     } else {
@@ -18,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Fade-in scroll effect
   const faders = document.querySelectorAll('.fade-in');
   const appearOptions = {
     threshold: 0.2,
