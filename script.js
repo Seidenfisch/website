@@ -22,7 +22,7 @@ themeToggle.addEventListener('click', () => {
 const galleries = {
   bike1: [
     'https://i.imgur.com/SmQ76BE.jpeg',
-    'https://i.imgur.com/SmQ76BE.jpeg',
+    'https://i.imgur.com/NAGfVSA.jpeg',
     'https://i.imgur.com/SmQ76BE.jpeg'
   ],
   bike2: [
