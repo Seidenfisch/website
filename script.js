@@ -16,3 +16,13 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
+
+
+document.querySelectorAll('.tile img').forEach(img => {
+  img.addEventListener('click', () => {
+    const instance = basicLightbox.create(`
+      <img src="${img.dataset.full}" alt="${img.alt}" style="max-width: 90vw; max-height: 90vh;">
+    `);
+    instance.show();
+  });
+});
