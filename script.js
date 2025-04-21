@@ -17,30 +17,37 @@ themeToggle.addEventListener('click', () => {
   }
 });
 
-// Lightbox Gallery with Next/Prev buttons
+// Lightbox Gallery with Titles
 
 const galleries = {
-  bike1: [
-    'https://i.imgur.com/SmQ76BE.jpeg',
-    'https://i.imgur.com/NAGfVSA.jpeg',
-    'https://i.imgur.com/SmQ76BE.jpeg'
-  ],
-  bike2: [
-    'https://i.imgur.com/TGrDQMS.jpeg',
-    'https://i.imgur.com/TGrDQMS.jpeg',
-    'https://i.imgur.com/TGrDQMS.jpeg'
-  ],
+  bike1: {
+    title: "Custom Road Bike",
+    images: [
+      'https://i.imgur.com/SmQ76BE.jpeg',
+      'https://i.imgur.com/SmQ76BE.jpeg',
+      'https://i.imgur.com/SmQ76BE.jpeg'
+    ]
+  },
+  bike2: {
+    title: "Vintage Gravel Bike",
+    images: [
+      'https://i.imgur.com/TGrDQMS.jpeg',
+      'https://i.imgur.com/TGrDQMS.jpeg',
+      'https://i.imgur.com/TGrDQMS.jpeg'
+    ]
+  }
 };
 
 document.querySelectorAll('.tile').forEach(tile => {
   tile.addEventListener('click', () => {
     const galleryName = tile.dataset.gallery;
-    const images = galleries[galleryName];
+    const { title, images } = galleries[galleryName];
     let currentIndex = 0;
 
     const instance = basicLightbox.create(`
       <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
-        <img id="lightbox-image" src="${images[currentIndex]}" style="max-width: 90vw; max-height: 90vh;">
+        <h2 style="margin-bottom: 10px;">${title}</h2>
+        <img id="lightbox-image" src="${images[currentIndex]}" style="max-width: 90vw; max-height: 80vh;">
         <div style="margin-top: 10px;">
           <button id="prev-button" style="margin-right: 10px;">⬅️ Prev</button>
           <button id="next-button">Next ➡️</button>
