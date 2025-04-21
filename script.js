@@ -24,8 +24,10 @@ const galleries = {
     title: "Custom Road Bike",
     images: [
       'https://i.imgur.com/SmQ76BE.jpeg',
-      'https://i.imgur.com/SmQ76BE.jpeg',
-      'https://i.imgur.com/SmQ76BE.jpeg'
+      'https://i.imgur.com/NAGfVSA.jpeg',
+      'https://i.imgur.com/yisIElY.jpeg',
+      'https://i.imgur.com/DjQNilg.jpeg',
+      'https://i.imgur.com/h52SC4k.jpeg'
     ]
   },
   bike2: {
