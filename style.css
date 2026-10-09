@@ -200,3 +200,8 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .story-body p{margin-bottom:25px}
 .article-end{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
 @media(max-width:590px){.article-context{padding:20px 22px;margin-bottom:36px}.writing-index .writing-card + .writing-card{margin-top:40px}}
+
+/* Align the two blue Build phrases in a shared column. */
+.hero h1.hero-tagline{display:grid;grid-template-columns:max-content max-content;column-gap:.23em;row-gap:0;width:max-content;max-width:100%}
+.hero-tagline>span,.hero-tagline>em{white-space:nowrap}
+@media(max-width:590px){.hero h1.hero-tagline{font-size:clamp(27px,8.5vw,45px);column-gap:.18em}}
