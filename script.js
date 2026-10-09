@@ -1,17 +1,17 @@
 /* Seiden Design Labs project archive — images hosted in this repository */
 const projects = [
-  {id:'brechschnell',title:'Brechschnell',category:'bicycles',images:['Brechschnell (Bicycle).JPEG','Brechschnell 2 (Bicycle).JPEG','Brechschnell 3 (Bicycle).JPEG']},
-  {id:'miami-cruise',title:'Miami Cruise',category:'bicycles',images:['Miami Cruise (Bicycle).JPEG','Miami Cruise 2 (Bicycle).JPEG','Miami Cruise 3 (Bicycle).JPEG','Miami Cruise 4 (Bicycle).JPEG']},
-  {id:'red-road',title:'Red Road',category:'bicycles',images:['Red Road (Bicycle).JPEG','Red Road Paint Close-Up (Bicycle).JPEG']},
-  {id:'villiger-arrow',title:'Villiger Arrow',category:'bicycles',images:['Villiger Arrow Prestige Shot (Bicycle).JPEG','Villiger Arrow Drivetrain Close Up (Bicycle).JPEG']},
-  {id:'aek-ii',title:'AEK II',category:'keyboards',images:['AEK II Final Product Prestige Shot (Keyboard).JPG','AEK II Finished Product Double Spread (Keyboard).jpg','AEK II Assembly 1 Double Spread (Keyboard).jpg','AEK II Assembly 2 Double Spread (Keyboard).jpg','AEK II Bunny Ears (Keyboard).jpg','AEK II Handwiring (Keyboard).JPG']},
-  {id:'poorpad',title:'PoorPad Prototype',category:'keyboards',images:['PoorPad Prototype 1 (Keyboard).jpg','PoorPad Prototype 2 (Keyboard).jpg']},
-  {id:'printkeeb',title:'PrintKeeb',category:'keyboards',images:['PrintKeeb Assembly 1 (Keyboard).jpg','PrintKeeb Assembly 2 (Keyboard).jpg']},
-  {id:'speedpad',title:'SpeedPad',category:'keyboards',images:['SpeedPad Electronics (Keyboard).jpg','SpeedPad Keycapless (Keyboard).jpg']},
-  {id:'tada68-numpad',title:'Tada68 Numpad',category:'keyboards',images:['Tada68 Numpad Raw Case (Keyboard).jpg']},
-  {id:'woodboard',title:'WoodBoard',category:'keyboards',images:['WoodBoard (Keyboard).jpg','WoodBoard CloseUp (Keyboard).jpg']},
-  {id:'relamp',title:'ReLamp',category:'lamps',images:['ReLamp Action Shot (Lamp).jpg','ReLamp AssemblyTesting (Lamp).jpg']},
-  {id:'rotolamp',title:'RotoLamp',category:'lamps',images:['RotoLamp Action Shot (Lamp).jpg','RotoLamp (Lamp).jpg','RotoLamp Side View (Lamp).JPG']}
+  {id:'brechschnell',title:'Brechschnell',category:'bicycles',description:"A collection of photographs exploring the shape, lines, and details of Brechschnell. More about the concept, components, and process will be added here.",images:['Brechschnell (Bicycle).JPEG','Brechschnell 2 (Bicycle).JPEG','Brechschnell 3 (Bicycle).JPEG']},
+  {id:'miami-cruise',title:'Miami Cruise',category:'bicycles',description:"A closer look at Miami Cruise, from its overall silhouette to the smaller visual details. This space will later cover the story behind the project.",images:['Miami Cruise (Bicycle).JPEG','Miami Cruise 2 (Bicycle).JPEG','Miami Cruise 3 (Bicycle).JPEG','Miami Cruise 4 (Bicycle).JPEG']},
+  {id:'red-road',title:'Red Road',category:'bicycles',description:"Red Road through a series of views and close-ups, including the finish. Notes on the design decisions and build process are coming soon.",images:['Red Road (Bicycle).JPEG','Red Road Paint Close-Up (Bicycle).JPEG']},
+  {id:'villiger-arrow',title:'Villiger Arrow',category:'bicycles',description:"Selected photographs of Villiger Arrow, highlighting the bicycle and its drivetrain details. Background information and specifications will follow.",images:['Villiger Arrow Prestige Shot (Bicycle).JPEG','Villiger Arrow Drivetrain Close Up (Bicycle).JPEG']},
+  {id:'aek-ii',title:'AEK II',category:'keyboards',description:"A visual record of the AEK II keyboard project, from assembly and handwiring to the finished result. A more detailed build log will be added here.",images:['AEK II Final Product Prestige Shot (Keyboard).JPG','AEK II Finished Product Double Spread (Keyboard).jpg','AEK II Assembly 1 Double Spread (Keyboard).jpg','AEK II Assembly 2 Double Spread (Keyboard).jpg','AEK II Bunny Ears (Keyboard).jpg','AEK II Handwiring (Keyboard).JPG']},
+  {id:'poorpad',title:'PoorPad Prototype',category:'keyboards',description:"Early views of the PoorPad prototype. This description will eventually document the idea, iterations, and lessons from the prototype.",images:['PoorPad Prototype 1 (Keyboard).jpg','PoorPad Prototype 2 (Keyboard).jpg']},
+  {id:'printkeeb',title:'PrintKeeb',category:'keyboards',description:"Assembly photographs from the PrintKeeb project. More detail about the design, parts, and development process will be added here.",images:['PrintKeeb Assembly 1 (Keyboard).jpg','PrintKeeb Assembly 2 (Keyboard).jpg']},
+  {id:'speedpad',title:'SpeedPad',category:'keyboards',description:"A closer look at SpeedPad, including the electronics and the keycapless layout. The technical details and project story will be filled in later.",images:['SpeedPad Electronics (Keyboard).jpg','SpeedPad Keycapless (Keyboard).jpg']},
+  {id:'tada68-numpad',title:'Tada68 Numpad',category:'keyboards',description:"A look at the raw case for the Tada68 Numpad. Future notes will cover the design approach and the steps toward the completed build.",images:['Tada68 Numpad Raw Case (Keyboard).jpg']},
+  {id:'woodboard',title:'WoodBoard',category:'keyboards',description:"WoodBoard and its details in photographs. This section will later describe the materials, design choices, and making process.",images:['WoodBoard (Keyboard).jpg','WoodBoard CloseUp (Keyboard).jpg']},
+  {id:'relamp',title:'ReLamp',category:'lamps',description:"A small gallery of ReLamp, including a view of assembly and testing. A full description of the idea and development will be added soon.",images:['ReLamp Action Shot (Lamp).jpg','ReLamp AssemblyTesting (Lamp).jpg']},
+  {id:'rotolamp',title:'RotoLamp',category:'lamps',description:"Several angles of RotoLamp, showing the object in context and from the side. Further notes on its concept and construction are coming soon.",images:['RotoLamp Action Shot (Lamp).jpg','RotoLamp (Lamp).jpg','RotoLamp Side View (Lamp).JPG']}
 ];
 const displayCategory = {bicycles:'Bicycles',keyboards:'Keyboards',lamps:'Lamps'};
 const encodedPath = filename => encodeURI(filename).replaceAll('#','%23');
@@ -85,6 +85,18 @@ if (detail) {
     subtitle.className = 'intro-copy';
     subtitle.textContent = project.images.length + (project.images.length === 1 ? ' photograph' : ' photographs') + ' · ' + displayCategory[project.category];
     detail.append(eyebrow,heading,subtitle);
+    const descriptionPanel = document.createElement('section');
+    descriptionPanel.className = 'project-description';
+    descriptionPanel.setAttribute('aria-label', 'About this project');
+    const descriptionHeading = document.createElement('h2');
+    descriptionHeading.textContent = 'About the project';
+    const descriptionText = document.createElement('p');
+    descriptionText.textContent = project.description;
+    const draftLabel = document.createElement('span');
+    draftLabel.className = 'description-draft';
+    draftLabel.textContent = 'Draft description';
+    descriptionPanel.append(descriptionHeading,descriptionText,draftLabel);
+    detail.append(descriptionPanel);
     const gallery = document.createElement('div');
     gallery.className = 'detail-gallery';
     project.images.forEach((filename,index) => {
