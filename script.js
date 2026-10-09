@@ -1,27 +1,7 @@
-const themeToggle = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('theme');
-
-if (savedTheme === 'light') {
-  document.body.classList.add('light-mode');
-  themeToggle.textContent = '☀️';
-}
-
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  if (document.body.classList.contains('light-mode')) {
-    themeToggle.textContent = '☀️';
-    localStorage.setItem('theme', 'light');
-  } else {
-    themeToggle.textContent = '🌙';
-    localStorage.setItem('theme', 'dark');
-  }
-});
-
-// Lightbox Gallery with Titles
-
+// Gallery behavior is scoped to the Work page; other pages need no JavaScript.
 const galleries = {
   bike1: {
-    title: "Custom Road Bike",
+    title: 'Custom Road Bike',
     images: [
       'https://i.imgur.com/SmQ76BE.jpeg',
       'https://i.imgur.com/NAGfVSA.jpeg',
@@ -31,49 +11,55 @@ const galleries = {
     ]
   },
   bike2: {
-    title: "Vintage Gravel Bike",
-    images: [
-      'https://i.imgur.com/TGrDQMS.jpeg',
-      'https://i.imgur.com/TGrDQMS.jpeg',
-      'https://i.imgur.com/TGrDQMS.jpeg'
-    ]
+    title: 'Vintage Gravel Bike',
+    images: ['https://i.imgur.com/TGrDQMS.jpeg']
   }
 };
 
-document.querySelectorAll('.tile').forEach(tile => {
-  tile.addEventListener('click', () => {
-    const galleryName = tile.dataset.gallery;
-    const { title, images } = galleries[galleryName];
-    let currentIndex = 0;
+const dialog = document.getElementById('gallery-dialog');
+if (dialog) {
+  const image = document.getElementById('gallery-image');
+  const title = document.getElementById('gallery-title');
+  const count = document.getElementById('gallery-count');
+  const previous = document.getElementById('gallery-prev');
+  const next = document.getElementById('gallery-next');
+  const close = document.getElementById('gallery-close');
+  let active = null;
+  let index = 0;
 
-    const instance = basicLightbox.create(`
-      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
-        <h2 style="margin-bottom: 10px;">${title}</h2>
-        <img id="lightbox-image" src="${images[currentIndex]}" style="max-width: 90vw; max-height: 80vh;">
-        <div style="margin-top: 10px;">
-          <button id="prev-button" style="margin-right: 10px;">⬅️ Prev</button>
-          <button id="next-button">Next ➡️</button>
-        </div>
-      </div>
-    `);
+  function render() {
+    if (!active) return;
+    const images = active.images;
+    image.src = images[index];
+    image.alt = active.title + ' — image ' + (index + 1) + ' of ' + images.length;
+    title.textContent = active.title;
+    count.textContent = String(index + 1).padStart(2, '0') + ' / ' + String(images.length).padStart(2, '0');
+    previous.disabled = next.disabled = images.length < 2;
+  }
 
-    instance.show();
+  function move(delta) {
+    if (!active) return;
+    index = (index + delta + active.images.length) % active.images.length;
+    render();
+  }
 
-    setTimeout(() => {
-      const updateImage = () => {
-        const img = instance.element().querySelector('#lightbox-image');
-        img.src = images[currentIndex];
-      };
-
-      instance.element().querySelector('#prev-button').onclick = () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        updateImage();
-      };
-
-      instance.element().querySelector('#next-button').onclick = () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        updateImage();
-      };
-    }, 100);
+  document.querySelectorAll('[data-gallery]').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      active = galleries[trigger.dataset.gallery];
+      if (!active) return;
+      index = 0;
+      render();
+      dialog.showModal();
+    });
   });
-});
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') { event.preventDefault(); move(-1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); move(1); }
+  });
+}
