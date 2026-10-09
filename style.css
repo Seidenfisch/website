@@ -113,3 +113,28 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .project-description p{color:var(--muted);font-size:15px;line-height:1.85;margin:0;max-width:680px}
 .description-draft{display:inline-block;margin-top:18px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 @media(max-width:590px){.project-description{margin-top:30px;padding:24px 21px}.project-description p{font-size:14px}}
+
+
+/* Quiet, content-first layout */
+.hero{padding-top:95px;padding-bottom:68px}
+.hero h1{margin:0 0 22px;font-size:clamp(51px,7vw,94px)}
+.hero-summary{color:var(--muted);font-size:16px;line-height:1.6;margin:0}
+.feature-image{height:min(500px,46vw)}
+.section{padding-top:90px;padding-bottom:105px}
+.section-heading{align-items:end;margin-bottom:32px}
+.section-heading h2{margin:0;font-size:clamp(30px,4vw,48px)}
+.project-meta>span{display:none}
+.page-intro-minimal{padding-top:88px;padding-bottom:45px}
+.page-intro-minimal h1{font-size:clamp(52px,7vw,84px);margin:0}
+.about-minimal{padding-top:100px;padding-bottom:115px;margin-bottom:0}
+.about-minimal .about-photo{aspect-ratio:0.92}
+.about-minimal .about-copy h1{font-size:clamp(48px,6vw,82px);font-weight:650;letter-spacing:-.07em;margin:0 0 18px;line-height:1.08}
+.about-minimal .about-copy>p{font-size:16px;line-height:1.7;color:var(--muted);margin:0}
+.about-minimal .about-copy .interests-simple{margin-top:28px;font-size:13px;color:var(--accent-soft);max-width:430px;line-height:1.9}
+.project-detail{padding-top:75px;padding-bottom:75px}
+.project-detail h1{margin-top:0}
+.project-description{padding:22px 25px;margin-top:31px;border-left-width:2px}
+.project-description p{font-size:15px;line-height:1.65}
+.site-footer{min-height:95px}.site-footer>a{font-size:12px;color:var(--muted)}.site-footer>a:hover{color:var(--accent)}
+@media(max-width:800px){.about-minimal{padding-top:75px;padding-bottom:85px;gap:35px}}
+@media(max-width:590px){.hero{padding-top:70px;padding-bottom:50px}.feature-image{min-height:280px}.section{padding-top:70px;padding-bottom:80px}.page-intro-minimal{padding-top:65px;padding-bottom:30px}.about-minimal{padding-top:55px;padding-bottom:70px}.about-minimal .about-copy h1{font-size:52px}.about-minimal .about-copy .interests-simple{margin-top:20px}.project-detail{padding-top:60px}}
