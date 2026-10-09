@@ -185,6 +185,13 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .article-context{max-width:780px;margin:0 auto 57px;padding:24px 28px;background:var(--surface);border:1px solid var(--line);border-left:2px solid var(--accent);border-radius:8px}
 .article-context h2{font-size:15px;font-weight:650;letter-spacing:-.02em;margin:0 0 10px;color:var(--text)}
 .article-context p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+.context-metadata{width:100%;border-collapse:collapse;margin:0 0 18px;text-align:left;font-size:13px}
+.context-metadata tr{border-top:1px solid var(--line)}
+.context-metadata tr:last-child{border-bottom:1px solid var(--line)}
+.context-metadata th,.context-metadata td{padding:11px 0;vertical-align:top;line-height:1.5}
+.context-metadata th{width:42%;padding-right:20px;color:var(--muted);font-weight:500}
+.context-metadata td{color:var(--text);font-weight:500}
+@media(max-width:590px){.context-metadata th{width:45%;padding-right:12px}}
 .writing-index{display:block}
 .writing-index .writing-card + .writing-card{margin-top:54px}
 .writing-cover-text{display:flex;align-items:center;justify-content:center;padding:30px;background:linear-gradient(150deg,#1c3042,#0d1722)}
