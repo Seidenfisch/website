@@ -5,6 +5,8 @@
     "category": "bicycles",
     "period": "2025年",
     "status": "使用中",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "主にアリエクスプレスで調達したパーツで組み上げられたグラベルバイク。特筆すべきパーツは、11速のLTWOOドライブトレインとTRP HYRDブレーキキャリパーだ。 \n\nこの塗装デザインの着想は、フレームの販売業者が送料を支払うために複数のA4サイズの中国切手を貼っていたことに由来しています。 \n\nグリーンとゴールドの色は中国郵政（チャイナポスト）を、ベージュと赤の色は梱包材や配送ラベルを表現しています。切手は塗装に組み込まれており、フレームと共に旅を続けています。\n",
     "images": [
       "Brechschnell Hero Shot (Bicycle).JPG",
@@ -22,6 +24,8 @@
     "category": "bicycles",
     "period": "2025年",
     "status": "未使用／屋根裏",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "マイアミ風のカラーリングが施されたビーチクルーザー。この塗装効果は、しわくちゃにしたビニール袋を使ってマーブル模様を作り出すことで実現した。",
     "images": [
       "Miami Cruise (Bicycle).JPEG",
@@ -48,6 +52,8 @@
     "category": "bicycles",
     "period": "追って追加されます",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "赤く塗装されたTriban RC 120（デカトロン）。この塗装効果は、赤い下地にビニール袋を使って銀色のマーブル模様を作り出し、その上に赤いキャンディペイントとクリアコートを重ねることで実現しました。",
     "images": [
       "Red Road (Bicycle).JPEG",
@@ -60,6 +66,8 @@
     "category": "bicycles",
     "period": "2026年",
     "status": "使用中",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "地元の「Velobörse」で入手したヴィリガー・アロー。『Red Road』で見られるのと同じ塗装技法が施されています。フレームとサスペンションフォークを除くほぼすべてのパーツが新しいコンポーネントに交換され、3×7のドライブトレインはシングルスピード仕様に変更されました。",
     "images": [
       "Villiger Hero Shot (Bicycle).JPG",
@@ -81,6 +89,8 @@
     "category": "keyboards",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "AEK IIキーボードの組み立て工程――手配線から最終組み立てまで。",
     "images": [
       "AEK II Final Product Prestige Shot (Keyboard).JPG",
@@ -97,6 +107,8 @@
     "category": "keyboards",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "アクリルケースを用いた実験的なコンパクトキーボードのプロトタイプ。",
     "images": [
       "PoorPad Prototype 1 (Keyboard).jpg",
@@ -110,6 +122,8 @@
     "category": "keyboards",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "PrintKeebキーボードプロジェクトの組み立て風景。",
     "images": [
       "PrintKeeb Assembly 1 (Keyboard).jpg",
@@ -122,6 +136,8 @@
     "category": "keyboards",
     "period": "2016年",
     "status": "顧客に販売済み",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "レースカー風のベッドから着想を得て、いたずらとして設計されたこの最先端の入力デバイスは、独立型のテンキーという形状をしています。キーボードマトリックスにはAtmega32u4ブレークアウトボードが手作業で配線されており、デバイスを完全にプログラムすることが可能です。\n車体下部の照明として、また最高速度を向上させるために赤いLEDが追加されましたが、その代償として発熱量が増加しました。\n\nSpeedPadは2016年に米国の顧客に販売されました。",
     "images": [
       "SpeedPad Keycapless (Keyboard).jpg",
@@ -134,6 +150,8 @@
     "category": "keyboards",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "プロトタイプから完成品に至るまでの、特注のテンキー。",
     "images": [
       "Tada68 Numpad Prestige Shot (Keyboard).jpg",
@@ -147,6 +165,8 @@
     "category": "keyboards",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "形状と素材を探求するキーボード・プロジェクト。",
     "images": [
       "WoodBoard (Keyboard).jpg",
@@ -159,6 +179,8 @@
     "category": "lamps",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "組み立てとテストを通じて紹介する照明プロジェクト。",
     "images": [
       "ReLamp Action Shot (Lamp).jpg",
@@ -171,6 +193,8 @@
     "category": "lamps",
     "period": "追記予定",
     "status": "追記予定",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "このランプは、私のリビングの室内照明が不十分だった問題を解決するためにデザインされました。本体は3Dプリントで作られており、LEDストリップと調光器として機能するポテンショメータが内蔵され、汎用の12V電源で駆動します。ランプシェードを回転させることで、明るさを調節できます。",
     "images": [
       "RotoLamp Action Shot (Lamp).jpg",

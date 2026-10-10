@@ -5,6 +5,8 @@
     "category": "bicycles",
     "period": "2025",
     "status": "Im Einsatz",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein Gravel-Fahrrad, das hauptsächlich aus Komponenten von AliExpress zusammengebaut wurde; besonders hervorzuheben sind der 11-Gang-Antrieb von LTWOO und die TRP HYRD-Bremssättel. \n\nDie Inspiration für die Lackierung entstand dadurch, dass der Rahmenverkäufer mehrere A4-Blätter mit chinesischen Briefmarken verwendet hatte, um die Versandkosten zu decken. \n\nDie grün-goldenen Farben beziehen sich auf die chinesische Post (China Post), die Beige- und Rottöne stehen für Verpackungs- und Versandetiketten. Die Briefmarken wurden in die Lackierung integriert und reisen nun gemeinsam mit dem Rahmen weiter.\n",
     "images": [
       "Brechschnell Hero Shot (Bicycle).JPG",
@@ -22,6 +24,8 @@
     "category": "bicycles",
     "period": "2025",
     "status": "Nicht in Gebrauch / Dachboden",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein Beach-Cruiser in einer Farbgebung im Miami-Stil; der Lackeffekt wurde mithilfe einer zerknüllten Plastiktüte erzielt, um die marmorierte Struktur zu erzeugen.",
     "images": [
       "Miami Cruise (Bicycle).JPEG",
@@ -48,6 +52,8 @@
     "category": "bicycles",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein rot lackierter Triban RC 120 (Decathlon); der Lackeffekt wurde erzielt, indem mit einer Plastiktüte eine silberne Marmorstruktur auf einem roten Untergrund erzeugt wurde, der anschließend mit roter Candy-Lackfarbe und Klarlack überzogen wurde.",
     "images": [
       "Red Road (Bicycle).JPEG",
@@ -60,6 +66,8 @@
     "category": "bicycles",
     "period": "2026",
     "status": "Im Einsatz",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein Villiger Arrow, der von der örtlichen Velobörse stammt; lackiert mit derselben Technik wie beim Red Road. Mit Ausnahme des Rahmens und der Federgabel wurden fast alle Teile durch neuere Komponenten ersetzt, der 3x7-Antrieb wurde gegen eine Single-Speed-Konfiguration ausgetauscht.",
     "images": [
       "Villiger Hero Shot (Bicycle).JPG",
@@ -81,6 +89,8 @@
     "category": "keyboards",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Der Bau einer AEK-II-Tastatur – von der manuellen Verdrahtung bis zur Endmontage.",
     "images": [
       "AEK II Final Product Prestige Shot (Keyboard).JPG",
@@ -97,6 +107,8 @@
     "category": "keyboards",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein kompakter Tastatur-Prototyp mit einem Experiment mit einem Acrylgehäuse.",
     "images": [
       "PoorPad Prototype 1 (Keyboard).jpg",
@@ -110,6 +122,8 @@
     "category": "keyboards",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Montageansichten aus dem PrintKeeb-Tastaturprojekt.",
     "images": [
       "PrintKeeb Assembly 1 (Keyboard).jpg",
@@ -122,6 +136,8 @@
     "category": "keyboards",
     "period": "2016",
     "status": "An den Kunden verkauft",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Inspiriert von Betten im Rennwagen-Stil und als Streich konzipiert, präsentiert sich dieses hochmoderne Eingabegerät in Form eines eigenständigen Ziffernblocks. Die Tastaturmatrix wurde manuell mit einem Atmega32u4-Breakout-Board verdrahtet, wodurch das Gerät vollständig programmierbar ist.\nEine rote LED wurde hinzugefügt, um die Unterbodenbeleuchtung zu gewährleisten und die Höchstgeschwindigkeit zu erhöhen – allerdings auf Kosten einer höheren Wärmeentwicklung.\n\nDas SpeedPad wurde 2016 an einen Kunden in den USA verkauft.",
     "images": [
       "SpeedPad Keycapless (Keyboard).jpg",
@@ -134,6 +150,8 @@
     "category": "keyboards",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein maßgeschneidertes Ziffernfeld – vom Prototyp bis zum fertigen Produkt.",
     "images": [
       "Tada68 Numpad Prestige Shot (Keyboard).jpg",
@@ -147,6 +165,8 @@
     "category": "keyboards",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein Tastaturprojekt, das sich mit Form und Materialien auseinandersetzt.",
     "images": [
       "WoodBoard (Keyboard).jpg",
@@ -159,6 +179,8 @@
     "category": "lamps",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Ein Beleuchtungsprojekt, das anhand der Montage und der Tests veranschaulicht wird.",
     "images": [
       "ReLamp Action Shot (Lamp).jpg",
@@ -171,6 +193,8 @@
     "category": "lamps",
     "period": "Wird noch ergänzt",
     "status": "Wird noch ergänzt",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Diese Lampe wurde entwickelt, um die unzureichende Innenbeleuchtung in meinem Wohnzimmer zu beheben. Das Gehäuse wurde im 3D-Druckverfahren hergestellt und verfügt über einen LED-Streifen sowie ein Potentiometer, das als Dimmer dient; die Stromversorgung erfolgt über ein handelsübliches 12-V-Netzteil. Die Helligkeit der Lampe lässt sich durch Drehen des Lampenschirms regulieren.",
     "images": [
       "RotoLamp Action Shot (Lamp).jpg",
