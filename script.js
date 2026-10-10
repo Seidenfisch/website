@@ -1,8 +1,10 @@
 /* Seiden Design Labs project archive — images hosted in this repository */
 // Project content is edited in Pages CMS and stored in content/projects.json.
 
-const displayCategory = {bicycles:'Bicycles',keyboards:'Keyboards',lamps:'Lamps'};
-const encodedPath = filename => encodeURI(filename.replace(/^\/+/, '')).replaceAll('#','%23');
+const ui = key => window.SDL ? window.SDL.t(key) : key;
+const assetRoot = document.documentElement.dataset.assetRoot || '';
+const displayCategory = {bicycles:ui('Bicycles'),keyboards:ui('Keyboards'),lamps:ui('Lamps')};
+const encodedPath = filename => assetRoot + encodeURI(filename.replace(/^\/+/, '')).replaceAll('#','%23');
 const filenameLabel = filename => filename.replace(/\s*\((Bicycle|Keyboard|Lamp)\)\.[^.]+$/i,'').replace(/\.[^.]+$/,'').replace(/\s*\d+$/,'').trim();
 
 async function initializeProjectPages() {
@@ -11,7 +13,7 @@ async function initializeProjectPages() {
   const detailTarget = document.getElementById('project-detail');
   if (!featured && !archiveTarget && !detailTarget) return;
 
-  const response = await fetch('content/projects.json', {cache:'no-store'});
+  const response = await fetch(assetRoot + 'content/projects.json', {cache:'no-store'});
   if (!response.ok) throw new Error('Project content could not be fetched (' + response.status + ')');
   const data = await response.json();
   if (!Array.isArray(data)) throw new Error('Project content is not a list');
@@ -55,7 +57,7 @@ if (archive) {
       const title = document.createElement('h2');
       title.textContent = project.title;
       const category = document.createElement('p');
-      category.textContent = displayCategory[project.category] + ' / ' + project.images.length + (project.images.length === 1 ? ' image' : ' images');
+      category.textContent = displayCategory[project.category] + ' / ' + project.images.length + (project.images.length === 1 ? ui(' image') : ui(' images'));
       info.append(title,category);
       link.append(photo,info);
       archive.append(link);
@@ -81,11 +83,11 @@ if (detail) {
   const project = projects.find(p => p.id === params.get('id'));
   if (!project) {
     const heading = document.createElement('h1');
-    heading.textContent = 'Project not found.';
+    heading.textContent = ui('Project not found.');
     const link = document.createElement('a');
     link.href = 'photos.html';
     link.className = 'text-link';
-    link.textContent = '← Back to all projects';
+    link.textContent = ui('← Back to all projects');
     detail.append(heading,link);
   } else {
     document.title = project.title + ' — Seiden Design Labs';
@@ -93,20 +95,20 @@ if (detail) {
     heading.textContent = project.title;
     const subtitle = document.createElement('p');
     subtitle.className = 'intro-copy';
-    subtitle.textContent = project.images.length + (project.images.length === 1 ? ' photograph' : ' photographs') + ' · ' + displayCategory[project.category];
+    subtitle.textContent = project.images.length + (project.images.length === 1 ? ui(' photograph') : ui(' photographs')) + ' · ' + displayCategory[project.category];
     detail.append(heading,subtitle);
     const descriptionPanel = document.createElement('section');
     descriptionPanel.className = 'project-description';
-    descriptionPanel.setAttribute('aria-label', 'About this project');
+    descriptionPanel.setAttribute('aria-label', ui('About this project'));
     const contextHeading = document.createElement('h2');
-    contextHeading.textContent = 'Details';
+    contextHeading.textContent = ui('Details');
     const metadataTable = document.createElement('table');
     metadataTable.className = 'context-metadata';
     const metadataBody = document.createElement('tbody');
     const metadataRows = [
-      ['Date / period', project.period],
-      ['Category', displayCategory[project.category]],
-      ['Status / whereabouts', project.status]
+      [ui('Date / period'), project.period],
+      [ui('Category'), displayCategory[project.category]],
+      [ui('Status / whereabouts'), project.status]
     ];
     for (const [label, value] of metadataRows) {
       const row = document.createElement('tr');
@@ -121,8 +123,9 @@ if (detail) {
     metadataTable.append(metadataBody);
     const descriptionText = document.createElement('p');
     descriptionText.textContent = project.description;
+    if (window.SDL && window.SDL.language !== 'en') descriptionText.lang = 'en';
     const overviewHeading = document.createElement('h2');
-    overviewHeading.textContent = 'Overview';
+    overviewHeading.textContent = ui('Overview');
     descriptionPanel.append(contextHeading, metadataTable, overviewHeading, descriptionText);
     detail.append(descriptionPanel);
     const gallery = document.createElement('div');
@@ -131,7 +134,7 @@ if (detail) {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'detail-image';
-      button.setAttribute('aria-label','View ' + project.title + ' image ' + (index+1) + ' enlarged');
+      button.setAttribute('aria-label',ui('View ') + project.title + ui(' image ') + (index+1) + ui(' enlarged'));
       const img = document.createElement('img');
       img.src = encodedPath(filename);
       img.alt = project.title + ' — ' + filenameLabel(filename);
@@ -148,12 +151,12 @@ if (detail) {
     const back = document.createElement('a');
     back.href = 'photos.html';
     back.className = 'text-link';
-    back.textContent = '← All projects';
+    back.textContent = ui('← All projects');
     const nextProject = projects[(projects.indexOf(project)+1) % projects.length];
     const next = document.createElement('a');
     next.className = 'text-link';
     next.href = 'project.html?id=' + encodeURIComponent(nextProject.id);
-    next.textContent = 'Next: ' + nextProject.title + ' ↗';
+    next.textContent = ui('Next: ') + nextProject.title + ' ↗';
     nav.append(back,next);
     detail.append(nav);
 
@@ -192,7 +195,7 @@ initializeProjectPages().catch(error => {
   if (target) {
     const notice = document.createElement('p');
     notice.className = 'intro-copy';
-    notice.textContent = 'Project content could not be loaded. Please refresh the page.';
+    notice.textContent = ui('Project content could not be loaded. Please refresh the page.');
     target.replaceChildren(notice);
   }
 });
