@@ -1,16 +1,20 @@
-[
-  {
-    "slug": "krispy-kreme-breach",
-    "period": "To be added",
-    "type": "Satire",
-    "status": "To be added",
-    "note": "A short note about why I wrote this satirical piece can go here."
-  },
-  {
-    "slug": "men-of-my-village",
-    "period": "To be added",
-    "type": "Short story",
-    "status": "To be added",
-    "note": "A short note about the inspiration and background of this story can go here."
-  }
-]
+{
+  "writing_contexts": [
+    {
+      "slug": "krispy-kreme-breach",
+      "title": "Krispy Kreme Breach",
+      "period": "To be added",
+      "type": "Satire",
+      "status": "To be added",
+      "note": "A short note about why I wrote this satirical piece can go here."
+    },
+    {
+      "slug": "men-of-my-village",
+      "title": "The Men of my Village",
+      "period": "To be added",
+      "type": "Short story",
+      "status": "To be added",
+      "note": "A short note about the inspiration and background of this story can go here."
+    }
+  ]
+}

@@ -30,6 +30,27 @@ class TranslationTests(unittest.TestCase):
         self.calls.append((language, tuple(texts)))
         return [f"[{language}] {text}" for text in texts]
 
+    def test_named_lists_and_legacy_arrays_are_both_supported(self):
+        sample = [{"id": "test", "title": "My Project"}]
+        self.assertEqual(translator.collection_rows(sample, "projects"), sample)
+        self.assertEqual(translator.collection_rows({"projects": sample}, "projects"), sample)
+        self.assertEqual(translator.collection_rows(
+            {"writing_contexts": [{"slug": "essay", "title": "Essay"}]},
+            "writing-context"
+        )[0]["title"], "Essay")
+        with self.assertRaises(ValueError):
+            translator.collection_rows({"wrong_key": sample}, "projects")
+
+    def test_untranslated_article_titles_are_preserved(self):
+        self.sources["writing-context"][0]["title"] = "The Original Title"
+        translated, _ = translator.build_translations(
+            self.sources, {}, {}, {}, self.fake_translate
+        )
+        for language in translator.LANGUAGES:
+            self.assertEqual(
+                translated[language]["writing-context"][0]["title"], "The Original Title"
+            )
+
     def test_initial_translation_preserves_ids_images_and_titles(self):
         output, state = translator.build_translations(
             self.sources, {}, {}, {}, self.fake_translate
@@ -68,7 +89,7 @@ class TranslationTests(unittest.TestCase):
             self.sources, first, state, overrides, self.fake_translate
         )
         self.assertEqual(output["de"]["projects"][0]["description"], "Eigener Text")
-        self.assertEqual(self.calls, [("fr", ("New text",))])
+        self.assertEqual(self.calls, [("fr", ("New text",)), ("ja", ("New text",))])
         self.assertTrue(new_state["de"]["projects/test/description"].startswith("override:"))
         self.calls.clear()
         translator.build_translations(self.sources, output, new_state, {}, self.fake_translate)
