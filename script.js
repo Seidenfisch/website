@@ -125,13 +125,13 @@ if (detail) {
       heading.scope = 'row';
       heading.textContent = label;
       const cell = document.createElement('td');
-      cell.textContent = value || ui('To be added');
+      window.SDL.renderMarkdown(cell, value || ui('To be added'));
       row.append(heading, cell);
       metadataBody.append(row);
     }
     metadataTable.append(metadataBody);
     const descriptionText = document.createElement('p');
-    descriptionText.textContent = project.description;
+    window.SDL.renderMarkdown(descriptionText, project.description);
     if (language !== 'en' && !translated) descriptionText.lang = 'en';
     const overviewHeading = document.createElement('h2');
     overviewHeading.textContent = ui('Overview');
