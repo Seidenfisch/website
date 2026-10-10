@@ -123,6 +123,7 @@
     "period": "2016",
     "status": "Sold to Customer",
     "materials": "ABS, Gateron Red Switches, Atmega32u4 Breakout Board, Diodes, Cable, Glue",
+    "fabrication_methods": "3D printing, hand assembly",
     "description": "Inspired by racecar-style beds and designed as a practical joke, this state of the art input device takes the form of a standalone number pad. The keyboard matrix has been hand-wired with an Atmega32u4 breakout board, allowing for full programmability of the device.\nA red LED was added to provide for undercarriage lighting and to increase the top speed, at the cost of increased heat.\n\nThe SpeedPad was sold to a customer in the USA in 2016.",
     "images": [
       "SpeedPad Keycapless (Keyboard).jpg",
