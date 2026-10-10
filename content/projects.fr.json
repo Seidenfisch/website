@@ -171,7 +171,7 @@
     "category": "lamps",
     "period": "À ajouter",
     "status": "À ajouter",
-    "description": "Cette lampe a été conçue pour pallier le manque d'éclairage intérieur dans mon salon. Le corps est imprimé en 3D et intègre une bande LED ainsi qu'un potentiomètre servant de variateur d'intensité ; il est alimenté par un bloc d'alimentation générique de 12 V.",
+    "description": "Cette lampe a été conçue pour pallier le manque d'éclairage intérieur dans mon salon. Le corps de la lampe est imprimé en 3D et intègre une bande LED ainsi qu'un potentiomètre servant de variateur ; il est alimenté par un bloc d'alimentation générique de 12 V. L'intensité lumineuse se règle en faisant pivoter l'abat-jour.",
     "images": [
       "RotoLamp Action Shot (Lamp).jpg",
       "RotoLamp (Lamp).jpg",
