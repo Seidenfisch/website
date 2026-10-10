@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title id="title">Seiden Design Labs</title>
-  <rect x="0" y="0" width="64" height="64" rx="14" fill="#0c1118"/>
-  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#273747" stroke-width="2"/>
-  <path d="M44 19H27c-7 0-11 4-11 10s5 9 13 9h7c8 0 12 3 12 9s-5 10-13 10H18" transform="translate(0 -6)" fill="none" stroke="#83caff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
