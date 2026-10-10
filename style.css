@@ -230,3 +230,6 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .credit-row a{color:var(--accent);text-decoration:none}
 .credit-row a:hover{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:590px){.credits-page{padding-top:65px;padding-bottom:80px}.credits-page h1{margin-bottom:28px}.credit-row{grid-template-columns:1fr;gap:9px;padding:19px 0}}
+
+/* Preserve line breaks entered in Pages CMS descriptions and context notes. */
+.project-description p,.article-context p{white-space:pre-line}
