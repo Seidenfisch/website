@@ -99,7 +99,7 @@ if (detail) {
     descriptionPanel.className = 'project-description';
     descriptionPanel.setAttribute('aria-label', 'About this project');
     const contextHeading = document.createElement('h2');
-    contextHeading.textContent = 'Context';
+    contextHeading.textContent = 'Details';
     const metadataTable = document.createElement('table');
     metadataTable.className = 'context-metadata';
     const metadataBody = document.createElement('tbody');
@@ -121,7 +121,9 @@ if (detail) {
     metadataTable.append(metadataBody);
     const descriptionText = document.createElement('p');
     descriptionText.textContent = project.description;
-    descriptionPanel.append(contextHeading, metadataTable, descriptionText);
+    const overviewHeading = document.createElement('h2');
+    overviewHeading.textContent = 'Overview';
+    descriptionPanel.append(contextHeading, metadataTable, overviewHeading, descriptionText);
     detail.append(descriptionPanel);
     const gallery = document.createElement('div');
     gallery.className = 'detail-gallery';
