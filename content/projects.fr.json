@@ -25,6 +25,8 @@
       "category": "bicycles",
       "period": "2025",
       "status": "Hors service / Grenier",
+      "materials": "Vélo, Peinture",
+      "fabrication_methods": "Peinture au pistolet, assemblage manuel",
       "description": "Un vélo de plage peint dans des tons inspirés de Miami ; l'effet de peinture a été obtenu à l'aide d'un sac en plastique froissé afin de créer une texture marbrée.",
       "images": [
         "Miami Cruise (Bicycle).JPEG",

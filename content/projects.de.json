@@ -25,6 +25,8 @@
       "category": "bicycles",
       "period": "2025",
       "status": "Nicht in Gebrauch / Dachboden",
+      "materials": "Fahrrad, Farbe",
+      "fabrication_methods": "Lackieren mit Sprühfarbe, manuelle Montage",
       "description": "Ein Beach-Cruiser in einer Farbgebung im Miami-Stil; der Lackeffekt wurde mithilfe einer zerknüllten Plastiktüte erzielt, um die marmorierte Struktur zu erzeugen.",
       "images": [
         "Miami Cruise (Bicycle).JPEG",
