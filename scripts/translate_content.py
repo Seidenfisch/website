@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Translate English Pages CMS content into German/French with DeepL API Free.
+"""Translate English Pages CMS content into German/French/Japanese with DeepL API Free.
 
 Only content fields are translated. Project IDs, titles, categories and image paths
 are copied verbatim. Source hashes permit incremental updates without re-billing
@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 API_URL = "https://api-free.deepl.com/v2/translate"
-LANGUAGES = ("de", "fr")
+LANGUAGES = ("de", "fr", "ja")
 COLLECTIONS = {
     "projects": ("id", ("period", "status", "description")),
     "writing-context": ("slug", ("period", "type", "status", "note")),

@@ -33,9 +33,9 @@ class TranslationTests(unittest.TestCase):
         output, state = translator.build_translations(
             self.sources, {}, {}, {}, self.fake_translate
         )
-        self.assertEqual(len(self.calls), 2)
+        self.assertEqual(len(self.calls), 3)
         self.assertEqual(len(self.calls[0][1]), 7)
-        for lang in ("de", "fr"):
+        for lang in ("de", "fr", "ja"):
             project = output[lang]["projects"][0]
             self.assertEqual(project["title"], "My Project")
             self.assertEqual(project["images"], ["hero.jpg", "detail.jpg"])
