@@ -43,8 +43,37 @@
       'Type':'Type','To be added':'À compléter'
     }
   };
+  // A deliberately small Markdown subset for editable CMS text.
+  // DOM nodes and protocol-checked links keep HTML from CMS content inert.
+  const renderMarkdown = (element, source) => {
+    const text = String(source || '').replace(/\r\n?/g, '\n');
+    const token = /\[([^\]\n]+)\]\(((?:https?:\/\/|mailto:)[^\s)]+)\)|\*\*([^*\n]+)\*\*|\*([^*\n]+)\*|\n/g;
+    element.replaceChildren();
+    let cursor = 0;
+    for (const match of text.matchAll(token)) {
+      if (match.index > cursor) element.append(document.createTextNode(text.slice(cursor, match.index)));
+      if (match[1] !== undefined) {
+        const link = document.createElement('a');
+        link.href = match[2];
+        link.textContent = match[1];
+        if (/^https?:\/\//i.test(match[2])) {
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+        }
+        element.append(link);
+      } else if (match[3] !== undefined || match[4] !== undefined) {
+        const emphasis = document.createElement(match[3] !== undefined ? 'strong' : 'em');
+        emphasis.textContent = match[3] ?? match[4];
+        element.append(emphasis);
+      } else {
+        element.append(document.createElement('br'));
+      }
+      cursor = match.index + match[0].length;
+    }
+    if (cursor < text.length) element.append(document.createTextNode(text.slice(cursor)));
+  };
   window.SDL = {
-    language, root,
+    language, root, renderMarkdown,
     t: key => (translations[language] && translations[language][key]) || key
   };
   document.addEventListener('DOMContentLoaded', () => {
