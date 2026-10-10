@@ -32,13 +32,13 @@
         heading.scope = 'row';
         heading.textContent = label;
         const cell = document.createElement('td');
-        cell.textContent = value || ui('To be added');
+        window.SDL.renderMarkdown(cell, value || ui('To be added'));
         row.append(heading, cell);
         tbody.append(row);
       }
     }
     const note = panel.querySelector('p');
-    if (note) { note.textContent = entry.note || ''; if (language !== 'en' && !translated) note.lang = 'en'; else note.removeAttribute('lang'); }
+    if (note) { window.SDL.renderMarkdown(note, entry.note || ''); if (language !== 'en' && !translated) note.lang = 'en'; else note.removeAttribute('lang'); }
   } catch (error) {
     console.error('Unable to load writing context; showing page fallback:', error);
   }
