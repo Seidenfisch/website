@@ -1,0 +1,72 @@
+# SDL content editor — https://app.pagescms.org/
+# Work and Writing context are editable without changing site code.
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: projects
+    label: Work projects
+    type: file
+    path: content/projects.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: URL identifier
+        type: string
+        required: true
+        description: "Lowercase slug used in project links, e.g. brechschnell. Avoid changing existing IDs."
+      - name: title
+        label: Project name
+        type: string
+        required: true
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values:
+            - name: bicycles
+              label: Bicycles
+            - name: keyboards
+              label: Keyboards
+            - name: lamps
+              label: Lamps
+      - name: period
+        label: Date / period
+        type: string
+      - name: status
+        label: Status / whereabouts
+        type: string
+      - name: description
+        label: Project description
+        type: text
+      - name: images
+        label: Gallery image paths
+        type: string
+        list: true
+        description: "First image is the cover. Use existing repo filenames or assets/uploads/name.jpg for new uploads."
+  - name: writing_contexts
+    label: Writing context
+    type: file
+    path: content/writing-context.json
+    format: json
+    list: true
+    fields:
+      - name: slug
+        label: Article identifier
+        type: string
+        required: true
+        description: "Matches the article filename without .html; do not change existing identifiers."
+      - name: period
+        label: Date / period
+        type: string
+      - name: type
+        label: Type
+        type: string
+      - name: status
+        label: Status / whereabouts
+        type: string
+      - name: note
+        label: Context note
+        type: text
