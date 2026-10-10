@@ -1,16 +1,20 @@
-[
-  {
-    "slug": "krispy-kreme-breach",
-    "period": "À ajouter",
-    "type": "Satire",
-    "status": "À ajouter",
-    "note": "Vous pouvez insérer ici une brève note expliquant pourquoi j'ai écrit cet article satirique."
-  },
-  {
-    "slug": "men-of-my-village",
-    "period": "À ajouter",
-    "type": "Nouvelle",
-    "status": "À ajouter",
-    "note": "Vous pouvez insérer ici une brève note sur l'inspiration et le contexte de cette histoire."
-  }
-]
+{
+  "writing_contexts": [
+    {
+      "slug": "krispy-kreme-breach",
+      "title": "Krispy Kreme Breach",
+      "period": "À ajouter",
+      "type": "Satire",
+      "status": "À ajouter",
+      "note": "Vous pouvez insérer ici une brève note expliquant pourquoi j'ai écrit cet article satirique."
+    },
+    {
+      "slug": "men-of-my-village",
+      "title": "The Men of my Village",
+      "period": "À ajouter",
+      "type": "Nouvelle",
+      "status": "À ajouter",
+      "note": "Vous pouvez insérer ici une brève note sur l'inspiration et le contexte de cette histoire."
+    }
+  ]
+}
