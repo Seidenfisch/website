@@ -25,6 +25,8 @@
       "category": "bicycles",
       "period": "2025",
       "status": "Not In Use / Attic",
+      "materials": "Bicycle, Paint",
+      "fabrication_methods": "Spray-painting, manual assembly",
       "description": "A beach cruiser painted in a miami-style color scheme; the paint effect was achieved using a crumpled plastic bag to create the marbled texture.",
       "images": [
         "Miami Cruise (Bicycle).JPEG",
