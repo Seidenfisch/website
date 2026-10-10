@@ -114,7 +114,9 @@ if (detail) {
     const metadataRows = [
       [ui('Date / period'), project.period],
       [ui('Category'), displayCategory[project.category]],
-      [ui('Status / whereabouts'), project.status]
+      [ui('Status / whereabouts'), project.status],
+      [ui('Materials'), project.materials],
+      [ui('Fabrication methods'), project.fabrication_methods]
     ];
     for (const [label, value] of metadataRows) {
       const row = document.createElement('tr');
@@ -122,7 +124,7 @@ if (detail) {
       heading.scope = 'row';
       heading.textContent = label;
       const cell = document.createElement('td');
-      cell.textContent = value;
+      cell.textContent = value || ui('To be added');
       row.append(heading, cell);
       metadataBody.append(row);
     }

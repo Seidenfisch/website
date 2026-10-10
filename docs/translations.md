@@ -16,7 +16,7 @@ from Pages CMS automatically trigger translation when committed to `main`.
 
 ## What is translated
 
-- Work: `period`, `status`, `description`.
+- Work: `period`, `status`, `materials`, `fabrication_methods`, `description`.
 - Writing context: `period`, `type`, `status`, `note`.
 - Project names, IDs, category keys, article slugs, image filenames and gallery ordering stay untouched.
 - Navigation and other interface translations are maintained in `locale.js` and the language-specific HTML files.

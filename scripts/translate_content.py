@@ -21,7 +21,7 @@ CONTENT = ROOT / "content"
 API_URL = "https://api-free.deepl.com/v2/translate"
 LANGUAGES = ("de", "fr", "ja")
 COLLECTIONS = {
-    "projects": ("id", ("period", "status", "description")),
+    "projects": ("id", ("period", "status", "materials", "fabrication_methods", "description")),
     "writing-context": ("slug", ("period", "type", "status", "note")),
 }
 STATE_FILE = CONTENT / "translation-state.json"

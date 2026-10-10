@@ -11,6 +11,7 @@
       '← All projects':'← Alle Projekte','Next: ':'Weiter: ',
       'Details':'Details','Overview':'Überblick','Date / period':'Datum / Zeitraum',
       'Category':'Kategorie','Status / whereabouts':'Status / Verbleib',
+      'Materials':'Materialien','Fabrication methods':'Fertigungsmethoden',
       'About this project':'Über dieses Projekt','View ':'Bild ansehen: ',' image ':' – Bild ',' enlarged':' vergrößert',
       'Project content could not be loaded. Please refresh the page.':'Projektinhalte konnten nicht geladen werden. Bitte die Seite neu laden.',
       'Type':'Art','To be added':'Noch offen'
@@ -23,6 +24,7 @@
       '← All projects':'← すべての作品','Next: ':'次の作品：',
       'Details':'詳細','Overview':'概要','Date / period':'日付／期間',
       'Category':'カテゴリー','Status / whereabouts':'状況／所在',
+      'Materials':'素材','Fabrication methods':'製作方法',
       'About this project':'このプロジェクトについて','View ':'閲覧：',' image ':' 写真 ',' enlarged':' を拡大',
       'Project content could not be loaded. Please refresh the page.':'作品を読み込めませんでした。ページを更新してください。',
       'Type':'種類','To be added':'未入力'
@@ -35,6 +37,7 @@
       '← All projects':'← Tous les projets','Next: ':'Suivant : ',
       'Details':'Détails','Overview':'Présentation','Date / period':'Date / période',
       'Category':'Catégorie','Status / whereabouts':'Statut / localisation',
+      'Materials':'Matériaux','Fabrication methods':'Méthodes de fabrication',
       'About this project':'À propos du projet','View ':'Voir : ',' image ':' – image ',' enlarged':' en grand',
       'Project content could not be loaded. Please refresh the page.':'Impossible de charger les projets. Veuillez actualiser la page.',
       'Type':'Type','To be added':'À compléter'
