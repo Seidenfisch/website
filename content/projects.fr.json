@@ -1,0 +1,181 @@
+[
+  {
+    "id": "brechschnell",
+    "title": "BrechSchnell",
+    "category": "bicycles",
+    "period": "2025",
+    "status": "En cours d'utilisation",
+    "description": "Un vélo de gravel assemblé principalement avec des composants achetés sur AliExpress ; parmi les composants notables, on peut citer la transmission LTWOO à 11 vitesses et les étriers de frein TRP HYRD. \n\nL'inspiration pour la peinture est venue du fait que le vendeur du cadre avait utilisé plusieurs feuilles A4 de timbres chinois pour couvrir les frais de port. \n\nLes couleurs vert et or font référence à la poste chinoise (China Post), tandis que le beige et le rouge représentent les emballages et les étiquettes d'expédition. Les timbres ont été intégrés à la peinture et continuent de voyager avec le cadre.\n",
+    "images": [
+      "Brechschnell Hero Shot (Bicycle).JPG",
+      "Brechschnell (Bicycle).JPEG",
+      "Brechschnell 2 (Bicycle).JPEG",
+      "Brechschnell 3 (Bicycle).JPEG",
+      "Brechschnell Front Shot (Bicycle).JPG",
+      "Brechschnell Second Shot (Bicycle).JPG",
+      "Brechschnell Side Shot (Bicycle).JPG"
+    ]
+  },
+  {
+    "id": "miami-cruise",
+    "title": "Miami Cruiser",
+    "category": "bicycles",
+    "period": "2025",
+    "status": "Hors service / Grenier",
+    "description": "Un vélo de plage peint dans des tons inspirés de Miami ; l'effet de peinture a été obtenu à l'aide d'un sac en plastique froissé afin de créer une texture marbrée.",
+    "images": [
+      "Miami Cruise (Bicycle).JPEG",
+      "Miami Cruise Full Shot 1 (Bicycle).JPG",
+      "Miami Cruise Full Shot 2 (Bicycle).JPG",
+      "Miami Cruise Full Shot 3 (Bicycle).JPG",
+      "Miami Cruise Full Shot 4 (Bicycle).JPG",
+      "Miami Cruise Full Shot 5 (Bicycle).JPG",
+      "Miami Cruise 2 (Bicycle).JPEG",
+      "Miami Cruise 3 (Bicycle).JPEG",
+      "Miami Cruise 4 (Bicycle).JPEG",
+      "Miami Cruise Close Up Chainring (Bicycle).JPG",
+      "Miami Cruise Close Up Down Tube (Bicycle).JPG",
+      "Miami Cruise Close Up Front Wheel (Bicycle).JPG",
+      "Miami Cruise Close Up Headtube (Bicycle).JPG",
+      "Miami Cruise Close Up Rear Wheel (Bicycle).JPG",
+      "Miami Cruise Close Up Seat Tube (Bicycle).JPG",
+      "Miami Cruise Close Up Seatstays (Bicycle).JPG"
+    ]
+  },
+  {
+    "id": "red-road",
+    "title": "Red Road",
+    "category": "bicycles",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un Triban RC 120 (Décathlon) peint en rouge ; l'effet de peinture a été obtenu à l'aide d'un sac en plastique afin de créer une texture marbrée argentée sur une base rouge, qui a ensuite été recouverte d'une peinture « candy » rouge et d'une couche de vernis transparent.",
+    "images": [
+      "Red Road (Bicycle).JPEG",
+      "Red Road Paint Close-Up (Bicycle).JPEG"
+    ]
+  },
+  {
+    "id": "villiger-arrow",
+    "title": "Villiger Arrow",
+    "category": "bicycles",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un vélo « Villiger Arrow » acheté à la Velobörse locale, qui était à l'origine un ",
+    "images": [
+      "Villiger Hero Shot (Bicycle).JPG",
+      "Villiger Arrow Prestige Shot (Bicycle).JPEG",
+      "Villiger Arrow Drivetrain Close Up (Bicycle).JPEG",
+      "Villiger Full Shot 1 (Bicycle).JPG",
+      "Villiger Full Shot 2 (Bicycle).JPG",
+      "Villiger Frame (Bicycle).JPG",
+      "Villiger Close Up Drivetrain (Bicycle).JPG",
+      "Villiger Close Up Drivetrain 2 (Bicycle).JPG",
+      "Villiger Close Up Frame (Bicycle).JPG",
+      "Villiger Close Up Frame 2 (Bicycle).JPG",
+      "Villiger Close Up Headtube (Bicycle).JPG"
+    ]
+  },
+  {
+    "id": "aek-ii",
+    "title": "AEK II Mini",
+    "category": "keyboards",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "La fabrication d'un clavier AEK II, du câblage manuel à l'assemblage final.",
+    "images": [
+      "AEK II Final Product Prestige Shot (Keyboard).JPG",
+      "AEK II Finished Product Double Spread (Keyboard).jpg",
+      "AEK II Assembly 1 Double Spread (Keyboard).jpg",
+      "AEK II Assembly 2 Double Spread (Keyboard).jpg",
+      "AEK II Bunny Ears (Keyboard).jpg",
+      "AEK II Handwiring (Keyboard).JPG"
+    ]
+  },
+  {
+    "id": "poorpad",
+    "title": "PoorPad Prototype",
+    "category": "keyboards",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Prototype de clavier compact avec un boîtier en acrylique à titre expérimental.",
+    "images": [
+      "PoorPad Prototype 1 (Keyboard).jpg",
+      "PoorPad Prototype 2 (Keyboard).jpg",
+      "PoorPad Acrylic Case Protoype (Keyboard).jpg"
+    ]
+  },
+  {
+    "id": "printkeeb",
+    "title": "PrintKeeb",
+    "category": "keyboards",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Vues de l'assemblage issues du projet de clavier PrintKeeb.",
+    "images": [
+      "PrintKeeb Assembly 1 (Keyboard).jpg",
+      "PrintKeeb Assembly 2 (Keyboard).jpg"
+    ]
+  },
+  {
+    "id": "speedpad",
+    "title": "SpeedPad",
+    "category": "keyboards",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un projet de clavier explorant l'électronique et la disposition des touches.",
+    "images": [
+      "SpeedPad Electronics (Keyboard).jpg",
+      "SpeedPad Keycapless (Keyboard).jpg"
+    ]
+  },
+  {
+    "id": "tada68-numpad",
+    "title": "Tada68 Numpad",
+    "category": "keyboards",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un pavé numérique personnalisé, présenté depuis le prototype jusqu'à la version finale.",
+    "images": [
+      "Tada68 Numpad Prestige Shot (Keyboard).jpg",
+      "Tada68 Numpad Side View(Keyboard).jpg",
+      "Tada68 Numpad Raw Case (Keyboard).jpg"
+    ]
+  },
+  {
+    "id": "woodboard",
+    "title": "WoodBoard",
+    "category": "keyboards",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un projet de clavier explorant les formes et les matériaux.",
+    "images": [
+      "WoodBoard (Keyboard).jpg",
+      "WoodBoard CloseUp (Keyboard).jpg"
+    ]
+  },
+  {
+    "id": "relamp",
+    "title": "ReLamp",
+    "category": "lamps",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un projet d'éclairage présenté à travers son montage et ses essais.",
+    "images": [
+      "ReLamp Action Shot (Lamp).jpg",
+      "ReLamp AssemblyTesting (Lamp).jpg"
+    ]
+  },
+  {
+    "id": "rotolamp",
+    "title": "RotoLamp",
+    "category": "lamps",
+    "period": "À ajouter",
+    "status": "À ajouter",
+    "description": "Un projet de lampe exploré à travers sa forme et sa présentation.",
+    "images": [
+      "RotoLamp Action Shot (Lamp).jpg",
+      "RotoLamp (Lamp).jpg",
+      "RotoLamp Side View (Lamp).JPG"
+    ]
+  }
+]
