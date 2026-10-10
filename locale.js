@@ -15,6 +15,18 @@
       'Project content could not be loaded. Please refresh the page.':'Projektinhalte konnten nicht geladen werden. Bitte die Seite neu laden.',
       'Type':'Art','To be added':'Noch offen'
     },
+    ja: {
+      'Bicycles':'自転車','Keyboards':'キーボード','Lamps':'照明',
+      ' image':' 枚の画像',' images':' 枚の画像',' photograph':' 枚の写真',' photographs':' 枚の写真',
+      'Project not found.':'プロジェクトが見つかりません。',
+      '← Back to all projects':'← すべての作品へ戻る',
+      '← All projects':'← すべての作品','Next: ':'次の作品：',
+      'Details':'詳細','Overview':'概要','Date / period':'日付／期間',
+      'Category':'カテゴリー','Status / whereabouts':'状況／所在',
+      'About this project':'このプロジェクトについて','View ':'閲覧：',' image ':' 写真 ',' enlarged':' を拡大',
+      'Project content could not be loaded. Please refresh the page.':'作品を読み込めませんでした。ページを更新してください。',
+      'Type':'種類','To be added':'未入力'
+    },
     fr: {
       'Bicycles':'Vélos','Keyboards':'Claviers','Lamps':'Luminaires',
       ' image':' image',' images':' images',' photograph':' photo',' photographs':' photos',

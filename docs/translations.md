@@ -1,7 +1,7 @@
 # SDL translations
 
 The English Pages CMS content is the source of truth. The GitHub Actions workflow
-`Translate Pages CMS content` translates edited text into German and French via
+`Translate Pages CMS content` translates edited text into German, French and Japanese via
 DeepL API Free and commits the generated JSON files back to `main`.
 
 ## One-time setup
@@ -9,7 +9,7 @@ DeepL API Free and commits the generated JSON files back to `main`.
 1. In GitHub, open **Settings → Secrets and variables → Actions → New repository secret**.
 2. Name it **`DEEPL_API_KEY`** and paste the DeepL API Free key. Never add the key to repository files or Pages CMS.
 3. Ensure the workflow can write repository contents. The workflow requests `contents: write`; repository/org policy must permit it.
-4. Open **Actions → Translate Pages CMS content → Run workflow** on `main` once. The DE/FR content files will then be generated and deployed by GitHub Pages.
+4. Open **Actions → Translate Pages CMS content → Run workflow** on `main` once. The DE/FR/JA content files will then be generated and deployed by GitHub Pages.
 
 Subsequent edits to `content/projects.json` or `content/writing-context.json`
 from Pages CMS automatically trigger translation when committed to `main`.
@@ -24,7 +24,7 @@ from Pages CMS automatically trigger translation when committed to `main`.
 
 Source hashes in `content/translation-state.json` make unchanged fields reusable,
 reducing DeepL character usage. Generated `content/*.de.json` and
-`content/*.fr.json` should not be edited directly: they'll be regenerated.
+`content/*.fr.json` and `content/*.ja.json` should not be edited directly: they'll be regenerated.
 
 ## Adjusting wording
 
@@ -42,6 +42,10 @@ language, collection, project ID or article slug, and field. Example:
     "writing-context": {}
   },
   "fr": {
+    "projects": {},
+    "writing-context": {}
+  },
+  "ja": {
     "projects": {},
     "writing-context": {}
   }
