@@ -295,3 +295,23 @@ html[lang="ja"] .hero-tagline{letter-spacing:-.025em}
   .site-header .nav-links{margin-top:0}
   .site-header .lang-switch{margin-top:8px}
 }
+
+/* More legible supporting copy without changing the large display headings. */
+.hero-bottom p,.intro-copy{font-size:18px}
+.hero-summary{font-size:17px}
+.about-copy>p:not(.kicker),.about-minimal .about-copy>p{font-size:17px}
+.about-minimal .about-copy .interests-simple{font-size:14px}
+.project-description p{font-size:17px}
+.context-metadata{font-size:14px}
+.article-context p{font-size:16px}
+.project-meta p,.project-meta>span,.archive-meta p{font-size:13px}
+.writing-card-copy p{font-size:16px}
+.article-body{font-size:18px}
+.article-byline,.source-list{font-size:14px}
+.credit-row p{font-size:17px}
+.translation-note{font-size:14px}
+@media(max-width:590px){
+  .hero-bottom p,.intro-copy{font-size:16px}
+  .project-description p{font-size:16px}
+  .article-body{font-size:17px}
+}
