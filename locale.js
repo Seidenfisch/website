@@ -47,28 +47,43 @@
   // DOM nodes and protocol-checked links keep HTML from CMS content inert.
   const renderMarkdown = (element, source) => {
     const text = String(source || '').replace(/\r\n?/g, '\n');
-    const token = /\[([^\]\n]+)\]\(((?:https?:\/\/|mailto:)[^\s)]+)\)|\*\*([^*\n]+)\*\*|\*([^*\n]+)\*|\n/g;
+    const token = /\[([^\]\n]+)\]\(|\*\*([^*\n]+)\*\*|\*([^*\n]+)\*|\n/g;
     element.replaceChildren();
     let cursor = 0;
-    for (const match of text.matchAll(token)) {
+    let match;
+    while ((match = token.exec(text)) !== null) {
       if (match.index > cursor) element.append(document.createTextNode(text.slice(cursor, match.index)));
       if (match[1] !== undefined) {
-        const link = document.createElement('a');
-        link.href = match[2];
-        link.textContent = match[1];
-        if (/^https?:\/\//i.test(match[2])) {
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
+        // Count URL parentheses: Wikipedia URLs commonly end in a closing ')'.
+        let end = token.lastIndex;
+        let depth = 1;
+        for (; end < text.length; end++) {
+          if (text[end] === '\n') break;
+          if (text[end] === '(') depth++;
+          if (text[end] === ')' && --depth === 0) break;
         }
-        element.append(link);
-      } else if (match[3] !== undefined || match[4] !== undefined) {
-        const emphasis = document.createElement(match[3] !== undefined ? 'strong' : 'em');
-        emphasis.textContent = match[3] ?? match[4];
+        const url = text.slice(token.lastIndex, end);
+        if (depth === 0 && /^(https?:\/\/|mailto:)[^\s<>]+$/i.test(url)) {
+          const link = document.createElement('a');
+          link.href = url;
+          link.textContent = match[1];
+          if (/^https?:\/\//i.test(url)) {
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+          }
+          element.append(link);
+          token.lastIndex = end + 1;
+        } else {
+          element.append(document.createTextNode(match[0]));
+        }
+      } else if (match[2] !== undefined || match[3] !== undefined) {
+        const emphasis = document.createElement(match[2] !== undefined ? 'strong' : 'em');
+        emphasis.textContent = match[2] ?? match[3];
         element.append(emphasis);
       } else {
         element.append(document.createElement('br'));
       }
-      cursor = match.index + match[0].length;
+      cursor = token.lastIndex;
     }
     if (cursor < text.length) element.append(document.createTextNode(text.slice(cursor)));
   };
