@@ -120,9 +120,9 @@
     "id": "speedpad",
     "title": "SpeedPad",
     "category": "keyboards",
-    "period": "Wird noch ergänzt",
-    "status": "Wird noch ergänzt",
-    "description": "Ein Keyboard-Projekt, das sich mit Elektronik und Layout befasst.",
+    "period": "2016",
+    "status": "An den Kunden verkauft",
+    "description": "Inspiriert von Betten im Rennwagen-Stil und als Scherz konzipiert, präsentiert sich dieses hochmoderne Eingabegerät in Form eines eigenständigen Ziffernblocks. Die Tastaturmatrix wurde manuell mit einem Atmega32u4-Breakout-Board verdrahtet, wodurch das Gerät vollständig programmierbar ist.\nEine rote LED wurde hinzugefügt, um die Unterbodenbeleuchtung zu gewährleisten und die Höchstgeschwindigkeit zu erhöhen – allerdings auf Kosten einer höheren Wärmeentwicklung.\n\nDas RacePad wurde 2016 an einen Kunden in den USA verkauft.",
     "images": [
       "SpeedPad Keycapless (Keyboard).jpg",
       "SpeedPad Electronics (Keyboard).jpg"
