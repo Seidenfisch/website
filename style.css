@@ -25,7 +25,7 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .hero-bottom p,.intro-copy{font-size:17px;line-height:1.7;color:var(--muted);max-width:520px;margin:0}
 .round-arrow{height:48px;width:48px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;font-size:24px;color:var(--accent);transition:background .2s}.round-arrow:hover{background:var(--surface-2)}
 .feature-image{height:min(530px,50vw);min-height:330px;max-width:1220px;margin:auto;position:relative;overflow:hidden;background:var(--surface)}
-.feature-image>img{height:100%;width:100%;object-fit:cover;object-position:center;filter:brightness(.8)}
+.feature-image>img{height:100%;width:100%;object-fit:cover;object-position:center}
 .image-stamp{position:absolute;top:24px;left:30px;font-size:10px;font-weight:650;letter-spacing:.11em;line-height:1.7;color:#fff}.image-stamp span{font-size:16px;margin-left:8px}
 .image-index{position:absolute;right:30px;bottom:25px;color:#fff;font-size:10px;letter-spacing:.11em}
 .section{padding-top:120px;padding-bottom:120px}
