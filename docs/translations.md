@@ -1,6 +1,8 @@
 # SDL translations
 
-The English Pages CMS content is the source of truth. The GitHub Actions workflow
+The English Pages CMS content is the source of truth. Project and writing-context files
+store named lists (`projects` and `writing_contexts`) so Pages CMS shows meaningful
+collapsible item labels rather than `Item #n`. The GitHub Actions workflow
 `Translate Pages CMS content` translates edited text into German, French and Japanese via
 DeepL API Free and commits the generated JSON files back to `main`.
 
@@ -18,7 +20,7 @@ from Pages CMS automatically trigger translation when committed to `main`.
 
 - Work: `period`, `status`, `materials`, `fabrication_methods`, `description`.
 - Writing context: `period`, `type`, `status`, `note`.
-- Project names, IDs, category keys, article slugs, image filenames and gallery ordering stay untouched.
+- Project names, IDs, category keys, article slugs, article titles, image filenames and gallery ordering stay untouched.
 - Navigation and other interface translations are maintained in `locale.js` and the language-specific HTML files.
 - Full creative writing/article bodies are **not** automatically machine-translated. Those pages remain in English with their existing notice; translate and review them separately before publishing translations.
 
@@ -59,3 +61,15 @@ structure locally without using the API, run
 
 If a workflow fails because of rate limits, quota, or a temporary service
 error, existing translations remain unchanged and the workflow can be rerun.
+
+## CMS list structure
+
+The English source files use these top-level structures:
+
+- `content/projects.json`: `{"projects": [{"id": "...", "title": "..."}]}`
+- `content/writing-context.json`: `{"writing_contexts": [{"slug": "...", "title": "..."}]}`
+
+Pages CMS displays each item's `title` in the editor. The article title is
+editor metadata only and is not translated or used to rename article URLs.
+The website and translator also accept the earlier top-level array format for
+backwards compatibility; new translated files use the named-list format.

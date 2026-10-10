@@ -27,6 +27,17 @@ COLLECTIONS = {
 STATE_FILE = CONTENT / "translation-state.json"
 OVERRIDES_FILE = CONTENT / "translation-overrides.json"
 
+COLLECTION_KEYS = {"projects": "projects", "writing-context": "writing_contexts"}
+
+
+def collection_rows(data, collection):
+    """Accept old top-level arrays and new Pages CMS named object lists."""
+    if isinstance(data, dict):
+        data = data.get(COLLECTION_KEYS[collection])
+    if not isinstance(data, list):
+        raise ValueError(f"{collection}.json must contain a list of entries")
+    return data
+
 
 def read_json(path, default=None):
     if not path.exists():
@@ -153,9 +164,7 @@ def main():
 
     sources = {}
     for collection, (identity, _) in COLLECTIONS.items():
-        rows = read_json(CONTENT / f"{collection}.json")
-        if not isinstance(rows, list):
-            raise ValueError(f"{collection}.json must be a JSON list")
+        rows = collection_rows(read_json(CONTENT / f"{collection}.json"), collection)
         ids = [row.get(identity) for row in rows if isinstance(row, dict)]
         if len(ids) != len(rows) or any(not isinstance(key, str) or not key for key in ids) or len(ids) != len(set(ids)):
             raise ValueError(f"{collection}.json has missing or duplicate {identity} values")
@@ -170,7 +179,8 @@ def main():
 
     previous_state = read_json(STATE_FILE, {})
     current = {
-        language: {collection: read_json(CONTENT / f"{collection}.{language}.json", [])
+        language: {collection: collection_rows(
+            read_json(CONTENT / f"{collection}.{language}.json", []), collection)
                    for collection in COLLECTIONS}
         for language in LANGUAGES
     }
@@ -185,7 +195,8 @@ def main():
     changed = 0
     for language in LANGUAGES:
         for collection in COLLECTIONS:
-            changed += write_json(CONTENT / f"{collection}.{language}.json", output[language][collection])
+            changed += write_json(CONTENT / f"{collection}.{language}.json",
+                                  {COLLECTION_KEYS[collection]: output[language][collection]})
     changed += write_json(STATE_FILE, state)
     print(f"Updated {changed} content files")
 

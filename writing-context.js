@@ -14,7 +14,8 @@
       response = await fetch(root + 'content/writing-context.json', {cache:'no-store'});
     }
     if (!response.ok) throw new Error('Writing context fetch failed: ' + response.status);
-    const entries = await response.json();
+    const data = await response.json();
+    const entries = Array.isArray(data) ? data : data?.writing_contexts;
     if (!Array.isArray(entries)) throw new Error('Writing context is not a list');
     const entry = entries.find(item => item.slug === slug);
     if (!entry) return;

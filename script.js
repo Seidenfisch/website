@@ -22,8 +22,9 @@ async function initializeProjectPages() {
   }
   if (!response.ok) throw new Error('Project content could not be fetched (' + response.status + ')');
   const data = await response.json();
-  if (!Array.isArray(data)) throw new Error('Project content is not a list');
-  const projects = data.filter(p => p && p.id && p.title && displayCategory[p.category] && Array.isArray(p.images) && p.images.length);
+  const items = Array.isArray(data) ? data : data?.projects;
+  if (!Array.isArray(items)) throw new Error('Project content is not a list');
+  const projects = items.filter(p => p && p.id && p.title && displayCategory[p.category] && Array.isArray(p.images) && p.images.length);
 
   if (featured) {
     featured.querySelectorAll('a.project-card').forEach(link => {
