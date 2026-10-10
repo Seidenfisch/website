@@ -6,7 +6,13 @@
   if (!panel) return;
   const slug = location.pathname.split('/').pop().replace(/\.html$/, '');
   try {
-    const response = await fetch(root + 'content/writing-context.json', {cache:'no-store'});
+    const language = window.SDL?.language || 'en';
+    let translated = language !== 'en';
+    let response = await fetch(root + 'content/' + (translated ? `writing-context.${language}.json` : 'writing-context.json'), {cache:'no-store'});
+    if (!response.ok && translated) {
+      translated = false;
+      response = await fetch(root + 'content/writing-context.json', {cache:'no-store'});
+    }
     if (!response.ok) throw new Error('Writing context fetch failed: ' + response.status);
     const entries = await response.json();
     if (!Array.isArray(entries)) throw new Error('Writing context is not a list');
@@ -31,7 +37,7 @@
       }
     }
     const note = panel.querySelector('p');
-    if (note) { note.textContent = entry.note || ''; if (window.SDL && window.SDL.language !== 'en') note.lang = 'en'; }
+    if (note) { note.textContent = entry.note || ''; if (language !== 'en' && !translated) note.lang = 'en'; else note.removeAttribute('lang'); }
   } catch (error) {
     console.error('Unable to load writing context; showing page fallback:', error);
   }

@@ -13,7 +13,13 @@ async function initializeProjectPages() {
   const detailTarget = document.getElementById('project-detail');
   if (!featured && !archiveTarget && !detailTarget) return;
 
-  const response = await fetch(assetRoot + 'content/projects.json', {cache:'no-store'});
+  const language = window.SDL?.language || 'en';
+  let translated = language !== 'en';
+  let response = await fetch(assetRoot + 'content/' + (translated ? `projects.${language}.json` : 'projects.json'), {cache:'no-store'});
+  if (!response.ok && translated) {
+    translated = false;
+    response = await fetch(assetRoot + 'content/projects.json', {cache:'no-store'});
+  }
   if (!response.ok) throw new Error('Project content could not be fetched (' + response.status + ')');
   const data = await response.json();
   if (!Array.isArray(data)) throw new Error('Project content is not a list');
@@ -123,7 +129,7 @@ if (detail) {
     metadataTable.append(metadataBody);
     const descriptionText = document.createElement('p');
     descriptionText.textContent = project.description;
-    if (window.SDL && window.SDL.language !== 'en') descriptionText.lang = 'en';
+    if (language !== 'en' && !translated) descriptionText.lang = 'en';
     const overviewHeading = document.createElement('h2');
     overviewHeading.textContent = ui('Overview');
     descriptionPanel.append(contextHeading, metadataTable, overviewHeading, descriptionText);

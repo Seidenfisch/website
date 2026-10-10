@@ -1,0 +1,45 @@
+name: Translate Pages CMS content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - content/projects.json
+      - content/writing-context.json
+      - content/translation-overrides.json
+      - scripts/translate_content.py
+      - .github/workflows/translate-content.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: translate-pages-cms-main
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate source content
+        run: python scripts/translate_content.py --check
+      - name: Translate changed content with DeepL Free
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: python scripts/translate_content.py
+      - name: Commit updated translations
+        run: |
+          git add content/projects.de.json content/projects.fr.json content/writing-context.de.json content/writing-context.fr.json content/translation-state.json
+          if git diff --cached --quiet; then
+            echo "Translations are already up to date."
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: sync German and French content translations'
+          git push
