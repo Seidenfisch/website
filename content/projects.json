@@ -5,6 +5,8 @@
     "category": "bicycles",
     "period": "2025",
     "status": "In Use",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A Gravel bicycle built primarily with components sourced from aliexpress; notable components are the 11-speed LTWOO drivetrain and the TRP HYRD brake calipers. \n\nThe inspiration for the paintwork stemmed from the fact that the frame vendor had used multiple A4 sheets of chinese stamps to cover the postage fee. \n\nThe Green-Gold colors reference the Chinese Postal Service (China Post), the beige and red colors represent packaging and shipping labels. The stamps were integrated into the paintwork and continue to travel together with the frame.\n",
     "images": [
       "Brechschnell Hero Shot (Bicycle).JPG",
@@ -22,6 +24,8 @@
     "category": "bicycles",
     "period": "2025",
     "status": "Not In Use / Attic",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A beach cruiser painted in a miami-style color scheme; the paint effect was achieved using a crumpled plastic bag to create the marbled texture.",
     "images": [
       "Miami Cruise (Bicycle).JPEG",
@@ -48,6 +52,8 @@
     "category": "bicycles",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A Triban RC 120 (Decathlon) painted in red; the paint effect was achieved using a plastic bag to create a silver marbled texture over a red base, which was then covered with red candy paint and clear coat.",
     "images": [
       "Red Road (Bicycle).JPEG",
@@ -60,6 +66,8 @@
     "category": "bicycles",
     "period": "2026",
     "status": "In Use",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A Villiger Arrow sourced from the local Velobörse; painted with the same technique as seen on Red Road. Almost all parts aside from the frame and suspension fork were replaced with newer components, the 3x7 drivetrain was swapped for a single speed setup.",
     "images": [
       "Villiger Hero Shot (Bicycle).JPG",
@@ -81,6 +89,8 @@
     "category": "keyboards",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "An AEK II keyboard build, from handwiring to final assembly.",
     "images": [
       "AEK II Final Product Prestige Shot (Keyboard).JPG",
@@ -97,6 +107,8 @@
     "category": "keyboards",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A compact keyboard prototype with an acrylic-case experiment.",
     "images": [
       "PoorPad Prototype 1 (Keyboard).jpg",
@@ -110,6 +122,8 @@
     "category": "keyboards",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Assembly views from the PrintKeeb keyboard project.",
     "images": [
       "PrintKeeb Assembly 1 (Keyboard).jpg",
@@ -122,6 +136,8 @@
     "category": "keyboards",
     "period": "2016",
     "status": "Sold to Customer",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "Inspired by racecar-style beds and designed as a practical joke, this state of the art input device takes the form of a standalone number pad. The keyboard matrix has been hand-wired with an Atmega32u4 breakout board, allowing for full programmability of the device.\nA red LED was added to provide for undercarriage lighting and to increase the top speed, at the cost of increased heat.\n\nThe RacePad was sold to a customer in the USA in 2016.",
     "images": [
       "SpeedPad Keycapless (Keyboard).jpg",
@@ -134,6 +150,8 @@
     "category": "keyboards",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A custom numpad, shown from prototype to finished form.",
     "images": [
       "Tada68 Numpad Prestige Shot (Keyboard).jpg",
@@ -147,6 +165,8 @@
     "category": "keyboards",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A keyboard project exploring form and materials.",
     "images": [
       "WoodBoard (Keyboard).jpg",
@@ -159,6 +179,8 @@
     "category": "lamps",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "A lighting project shown through assembly and testing.",
     "images": [
       "ReLamp Action Shot (Lamp).jpg",
@@ -171,6 +193,8 @@
     "category": "lamps",
     "period": "To be added",
     "status": "To be added",
+    "materials": "",
+    "fabrication_methods": "",
     "description": "This lamp was designed to address a lack of interior lighting in my living room. The body is 3d printed with an LED strip and a potentiometer acting as a dimmer and is powered by a generic 12v power supply. The lamp is dimmed by rotating the lampshade.",
     "images": [
       "RotoLamp Action Shot (Lamp).jpg",

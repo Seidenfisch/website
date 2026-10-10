@@ -38,6 +38,14 @@ content:
       - name: status
         label: Status / whereabouts
         type: string
+      - name: materials
+        label: Materials
+        type: text
+        description: "Main materials used in the project, such as steel, aluminum, acrylic, or wood."
+      - name: fabrication_methods
+        label: Fabrication methods
+        type: text
+        description: "How the project was made, such as 3D printing, CNC machining, welding, or hand assembly."
       - name: description
         label: Project description
         type: text

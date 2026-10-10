@@ -15,7 +15,8 @@ class TranslationTests(unittest.TestCase):
         self.sources = {
             "projects": [{
                 "id": "test", "title": "My Project", "category": "bicycles",
-                "period": "2025", "status": "In use", "description": "Built by hand.",
+                "period": "2025", "status": "In use", "materials": "Steel",
+                "fabrication_methods": "Welding", "description": "Built by hand.",
                 "images": ["hero.jpg", "detail.jpg"]
             }],
             "writing-context": [{
@@ -34,13 +35,15 @@ class TranslationTests(unittest.TestCase):
             self.sources, {}, {}, {}, self.fake_translate
         )
         self.assertEqual(len(self.calls), 3)
-        self.assertEqual(len(self.calls[0][1]), 7)
+        self.assertEqual(len(self.calls[0][1]), 9)
         for lang in ("de", "fr", "ja"):
             project = output[lang]["projects"][0]
             self.assertEqual(project["title"], "My Project")
             self.assertEqual(project["images"], ["hero.jpg", "detail.jpg"])
             self.assertEqual(project["id"], "test")
             self.assertEqual(project["description"], f"[{lang}] Built by hand.")
+            self.assertEqual(project["materials"], f"[{lang}] Steel")
+            self.assertEqual(project["fabrication_methods"], f"[{lang}] Welding")
             self.assertIn("projects/test/description", state[lang])
 
     def test_unchanged_data_costs_no_new_calls(self):
