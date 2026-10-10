@@ -315,3 +315,7 @@ html[lang="ja"] .hero-tagline{letter-spacing:-.025em}
   .project-description p{font-size:16px}
   .article-body{font-size:17px}
 }
+
+/* CMS context Markdown: links stay understated and use the SDL accent. */
+.project-description a,.article-context a{color:var(--accent);text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px}
+.project-description a:hover,.article-context a:hover{color:var(--text)}
