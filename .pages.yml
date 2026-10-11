@@ -42,21 +42,46 @@ content:
           - name: period
             label: Date / period
             type: string
+          - name: show_period
+            label: Show date / period
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail on the website without deleting its text."
           - name: status
             label: Status / whereabouts
             type: string
+          - name: show_status
+            label: Show status / whereabouts
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail on the website without deleting its text."
           - name: materials
             label: Materials
             type: text
             description: "Main materials used in the project, such as steel, aluminum, acrylic, or wood."
+          - name: show_materials
+            label: Show materials
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail on the website without deleting its text."
           - name: fabrication_methods
             label: Fabrication methods
             type: text
             description: "How the project was made, such as 3D printing, CNC machining, welding, or hand assembly."
+          - name: show_fabrication_methods
+            label: Show fabrication methods
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail on the website without deleting its text."
           - name: inspirations
             label: Inspirations
             type: text
             description: "People, objects, references, or designs that inspired this project. Supports Markdown links [label](https://example.com), **bold**, *italics*, and line breaks."
+          - name: show_inspirations
+            label: Show inspirations
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail on the website without deleting its text."
           - name: description
             label: Project description
             type: text

@@ -113,20 +113,22 @@ if (detail) {
     metadataTable.className = 'context-metadata';
     const metadataBody = document.createElement('tbody');
     const metadataRows = [
-      [ui('Date / period'), project.period],
-      [ui('Category'), displayCategory[project.category]],
-      [ui('Status / whereabouts'), project.status],
-      [ui('Materials'), project.materials],
-      [ui('Fabrication methods'), project.fabrication_methods],
-      [ui('Inspirations'), project.inspirations]
+      [ui('Date / period'), project.period, project.show_period],
+      [ui('Category'), displayCategory[project.category], true],
+      [ui('Status / whereabouts'), project.status, project.show_status],
+      [ui('Materials'), project.materials, project.show_materials],
+      [ui('Fabrication methods'), project.fabrication_methods, project.show_fabrication_methods],
+      [ui('Inspirations'), project.inspirations, project.show_inspirations]
     ];
-    for (const [label, value] of metadataRows) {
+    for (const [label, value, visible] of metadataRows) {
+      // Missing values are hidden; unset visibility flags default to visible.
+      if (visible === false || value == null || !String(value).trim()) continue;
       const row = document.createElement('tr');
       const heading = document.createElement('th');
       heading.scope = 'row';
       heading.textContent = label;
       const cell = document.createElement('td');
-      window.SDL.renderMarkdown(cell, value || ui('To be added'));
+      window.SDL.renderMarkdown(cell, value);
       row.append(heading, cell);
       metadataBody.append(row);
     }
