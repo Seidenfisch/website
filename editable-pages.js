@@ -18,7 +18,6 @@
         if (node && typeof value === 'string' && value.trim()) node.textContent = value;
       };
       if (isAbout) {
-        setText(isAbout.querySelector('h1'), data.headline_first);
         // Keep the blue accent on the second line.
         const heading = isAbout.querySelector('h1');
         if (heading && typeof data.headline_first === 'string' && typeof data.headline_accent === 'string') {
