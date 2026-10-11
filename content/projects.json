@@ -188,6 +188,7 @@
       "status": "Discarded",
       "materials": "Desk Lamp, PLA, Electronic Components",
       "fabrication_methods": "3D-printing, soldering, manual assembly",
+      "inspirations": "Darkness",
       "description": "This project arose from a discarded desk lamp and a need for direct lighting over my workspace. The diffuser and electronical housing and controls are 3D-printed, the articulating arm and lampshade were donated by the discarded desk lamp. The light can be turned on/off and dimmed via the three-button interface, inside the housing is a simple dimmer circuit sourced from AliExpress and a cable leading to a generic 12v power supply. The light inside the lamp is provided by a set of LED strips behind the diffuser.\n\nThe lamp was discarded at a later time when the aforementioned workspace ceased to exist.",
       "images": [
         "ReLamp Action Shot (Lamp).jpg",
