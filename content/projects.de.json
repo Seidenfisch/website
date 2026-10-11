@@ -185,7 +185,8 @@
       "category": "lamps",
       "period": "Wird noch ergänzt",
       "status": "Wird noch ergänzt",
-      "description": "Ein Beleuchtungsprojekt, das anhand der Montage und der Tests veranschaulicht wird.",
+      "fabrication_methods": "3D-Druck, Löten, manuelle Montage",
+      "description": "Dieses Projekt entstand aus einer ausrangierten Schreibtischlampe und dem Bedarf an direkter Beleuchtung über meinem Arbeitsplatz. Der Diffusor sowie das Elektronikgehäuse und die Bedienelemente sind 3D-gedruckt, der Gelenkarm und der Lampenschirm stammen von der ausrangierten Schreibtischlampe. Die Lampe lässt sich über die dreitastige Bedienoberfläche ein- und ausschalten sowie dimmen; im Inneren des Gehäuses befindet sich eine einfache Dimmerschaltung von AliExpress sowie ein Kabel, das zu einem handelsüblichen 12-V-Netzteil führt. Die Beleuchtung im Inneren der Lampe erfolgt über eine Reihe von LED-Streifen hinter dem Diffusor.\n\nDie Lampe wurde später entsorgt, als der oben genannte Arbeitsbereich nicht mehr existierte.",
       "images": [
         "ReLamp Action Shot (Lamp).jpg",
         "ReLamp AssemblyTesting (Lamp).jpg"
