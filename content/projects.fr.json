@@ -183,8 +183,9 @@
       "id": "relamp",
       "title": "ReLa",
       "category": "lamps",
-      "period": "À ajouter",
-      "status": "À ajouter",
+      "period": "2019",
+      "status": "Écarté",
+      "materials": "Lampe de bureau, PLA, composants électroniques",
       "fabrication_methods": "Impression 3D, soudure, assemblage manuel",
       "description": "Ce projet est né d’une lampe de bureau mise au rebut et du besoin d’un éclairage direct au-dessus de mon espace de travail. Le diffuseur, le boîtier électronique et les commandes ont été imprimés en 3D, tandis que le bras articulé et l’abat-jour proviennent de la lampe de bureau mise au rebut. La lampe peut être allumée, éteinte et réglée en intensité grâce à l’interface à trois boutons ; à l’intérieur du boîtier se trouve un simple circuit de variation d’intensité acheté sur AliExpress et un câble relié à une alimentation 12 V standard. L’éclairage à l’intérieur de la lampe est assuré par un ensemble de bandes LED situées derrière le diffuseur.\n\nLa lampe a été mise au rebut par la suite, lorsque l’espace de travail susmentionné a cessé d’exister.",
       "images": [
