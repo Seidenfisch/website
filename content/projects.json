@@ -202,6 +202,7 @@
       "status": "In Use",
       "materials": "PLA",
       "fabrication_methods": "3D-Printing, soldering, manual assembly",
+      "inspirations": "Darkness",
       "description": "This lamp was designed to address a lack of interior lighting in my living room. The body is 3d printed with an LED strip and a potentiometer acting as a dimmer and is powered by a generic 12v power supply. The lamp is dimmed by rotating the lampshade.",
       "images": [
         "RotoLamp Action Shot (Lamp).jpg",
