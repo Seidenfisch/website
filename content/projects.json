@@ -65,6 +65,8 @@
       "category": "bicycles",
       "period": "2026",
       "status": "In Use",
+      "materials": "Villiger Arrow, Bicycle Components, Paint",
+      "fabrication_methods": "Spray-paint, manual assembly",
       "description": "A Villiger Arrow sourced from the local Velobörse; painted with the same technique as seen on Red Road. Almost all parts aside from the frame and suspension fork were replaced with newer components, the 3x7 drivetrain was swapped for a single speed setup.",
       "images": [
         "Villiger Hero Shot (Bicycle).JPG",
