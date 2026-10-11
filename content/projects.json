@@ -150,6 +150,18 @@
       ]
     },
     {
+      "id": "printkeeb",
+      "title": "PrintKeeb",
+      "category": "keyboards",
+      "period": "To be added",
+      "status": "To be added",
+      "description": "Assembly views from the PrintKeeb keyboard project.",
+      "images": [
+        "PrintKeeb Assembly 1 (Keyboard).jpg",
+        "PrintKeeb Assembly 2 (Keyboard).jpg"
+      ]
+    },
+    {
       "id": "woodboard",
       "title": "WoodBoard",
       "category": "keyboards",
