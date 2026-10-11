@@ -1,6 +1,29 @@
 {
   "projects": [
     {
+      "id": "villiger-arrow",
+      "title": "Villiger Arrow",
+      "category": "bicycles",
+      "period": "2026",
+      "status": "Im Einsatz",
+      "materials": "Villiger Arrow, Fahrradkomponenten, Lackierung",
+      "fabrication_methods": "Sprühfarbe, manuelle Montage",
+      "description": "Ein Villiger Arrow, der von der örtlichen Velobörse stammt; lackiert mit derselben Technik wie bei [Red Road](https://seiden-design-labs.com/project?id=red-road). Mit Ausnahme des Rahmens und der Federgabel wurden fast alle Teile durch neuere Komponenten ersetzt; der 3x7-Antrieb wurde gegen eine Single-Speed-Konfiguration ausgetauscht.",
+      "images": [
+        "Villiger Hero Shot (Bicycle).JPG",
+        "Villiger Arrow Prestige Shot (Bicycle).JPEG",
+        "Villiger Arrow Drivetrain Close Up (Bicycle).JPEG",
+        "Villiger Full Shot 1 (Bicycle).JPG",
+        "Villiger Full Shot 2 (Bicycle).JPG",
+        "Villiger Frame (Bicycle).JPG",
+        "Villiger Close Up Drivetrain (Bicycle).JPG",
+        "Villiger Close Up Drivetrain 2 (Bicycle).JPG",
+        "Villiger Close Up Frame (Bicycle).JPG",
+        "Villiger Close Up Frame 2 (Bicycle).JPG",
+        "Villiger Close Up Headtube (Bicycle).JPG"
+      ]
+    },
+    {
       "id": "brechschnell",
       "title": "BrechSchnell",
       "category": "bicycles",
@@ -62,29 +85,6 @@
       ]
     },
     {
-      "id": "villiger-arrow",
-      "title": "Villiger Arrow",
-      "category": "bicycles",
-      "period": "2026",
-      "status": "Im Einsatz",
-      "materials": "Villiger Arrow, Fahrradkomponenten, Lackierung",
-      "fabrication_methods": "Sprühfarbe, manuelle Montage",
-      "description": "Ein Villiger Arrow, der von der örtlichen Velobörse stammt; lackiert mit derselben Technik wie bei [Red Road](https://seiden-design-labs.com/project?id=red-road). Mit Ausnahme des Rahmens und der Federgabel wurden fast alle Teile durch neuere Komponenten ersetzt; der 3x7-Antrieb wurde gegen eine Single-Speed-Konfiguration ausgetauscht.",
-      "images": [
-        "Villiger Hero Shot (Bicycle).JPG",
-        "Villiger Arrow Prestige Shot (Bicycle).JPEG",
-        "Villiger Arrow Drivetrain Close Up (Bicycle).JPEG",
-        "Villiger Full Shot 1 (Bicycle).JPG",
-        "Villiger Full Shot 2 (Bicycle).JPG",
-        "Villiger Frame (Bicycle).JPG",
-        "Villiger Close Up Drivetrain (Bicycle).JPG",
-        "Villiger Close Up Drivetrain 2 (Bicycle).JPG",
-        "Villiger Close Up Frame (Bicycle).JPG",
-        "Villiger Close Up Frame 2 (Bicycle).JPG",
-        "Villiger Close Up Headtube (Bicycle).JPG"
-      ]
-    },
-    {
       "id": "aek-ii",
       "title": "AEK II Mini",
       "category": "keyboards",
@@ -103,28 +103,18 @@
       ]
     },
     {
-      "id": "poorpad",
-      "title": "PoorPad Prototype",
+      "id": "tada68-numpad",
+      "title": "Tada68 Numpad",
       "category": "keyboards",
-      "period": "Wird noch ergänzt",
-      "status": "Wird noch ergänzt",
-      "description": "Ein kompakter Tastatur-Prototyp mit einem Experiment mit einem Acrylgehäuse.",
+      "period": "2016",
+      "status": "Ausgestellt, Wohnzimmer",
+      "materials": "ABS, Gateron Clear-Schalter, Atmega32u4, Dioden, Kabel",
+      "fabrication_methods": "3D-Druck, Handmontage, Sprühlackierung",
+      "description": "Dieser Ziffernblock wurde entwickelt, um das Fehlen eines Ziffernblocks bei der Tada68, einer Tastatur mit 65-%-Layout, auszugleichen. Das Gehäuse wurde so gestaltet, dass es sich der Geometrie des Tada68-Gehäuses anpasst; der Ziffernblock verfügt über durchsichtige Gateron-Schalter mit einer Betätigungskraft von 35 g. Die interne Elektronik wurde von Hand mit einem Atmega32u4-Controller verdrahtet. Zur Glättung der 3D-gedruckten Oberfläche wurde Sprühfarbe verwendet.\n\nDieser Ziffernblock ist derzeit in meinem Wohnzimmer ausgestellt.",
       "images": [
-        "PoorPad Prototype 1 (Keyboard).jpg",
-        "PoorPad Prototype 2 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg"
-      ]
-    },
-    {
-      "id": "printkeeb",
-      "title": "PrintKeeb",
-      "category": "keyboards",
-      "period": "Wird noch ergänzt",
-      "status": "Wird noch ergänzt",
-      "description": "Montageansichten aus dem PrintKeeb-Tastaturprojekt.",
-      "images": [
-        "PrintKeeb Assembly 1 (Keyboard).jpg",
-        "PrintKeeb Assembly 2 (Keyboard).jpg"
+        "Tada68 Numpad Prestige Shot (Keyboard).jpg",
+        "Tada68 Numpad Side View(Keyboard).jpg",
+        "Tada68 Numpad Raw Case (Keyboard).jpg"
       ]
     },
     {
@@ -142,18 +132,16 @@
       ]
     },
     {
-      "id": "tada68-numpad",
-      "title": "Tada68 Numpad",
+      "id": "poorpad",
+      "title": "PoorPad Prototype",
       "category": "keyboards",
-      "period": "2016",
-      "status": "Ausgestellt, Wohnzimmer",
-      "materials": "ABS, Gateron Clear-Schalter, Atmega32u4, Dioden, Kabel",
-      "fabrication_methods": "3D-Druck, Handmontage, Sprühlackierung",
-      "description": "Dieser Ziffernblock wurde entwickelt, um das Fehlen eines Ziffernblocks bei der Tada68, einer Tastatur mit 65-%-Layout, auszugleichen. Das Gehäuse wurde so gestaltet, dass es sich der Geometrie des Tada68-Gehäuses anpasst; der Ziffernblock verfügt über durchsichtige Gateron-Schalter mit einer Betätigungskraft von 35 g. Die interne Elektronik wurde von Hand mit einem Atmega32u4-Controller verdrahtet. Zur Glättung der 3D-gedruckten Oberfläche wurde Sprühfarbe verwendet.\n\nDieser Ziffernblock ist derzeit in meinem Wohnzimmer ausgestellt.",
+      "period": "Wird noch ergänzt",
+      "status": "Wird noch ergänzt",
+      "description": "Ein kompakter Tastatur-Prototyp mit einem Experiment mit einem Acrylgehäuse.",
       "images": [
-        "Tada68 Numpad Prestige Shot (Keyboard).jpg",
-        "Tada68 Numpad Side View(Keyboard).jpg",
-        "Tada68 Numpad Raw Case (Keyboard).jpg"
+        "PoorPad Prototype 1 (Keyboard).jpg",
+        "PoorPad Prototype 2 (Keyboard).jpg",
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg"
       ]
     },
     {
