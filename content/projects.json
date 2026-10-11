@@ -147,7 +147,9 @@
       "category": "keyboards",
       "period": "To be added",
       "status": "To be added",
-      "description": "A custom numpad, shown from prototype to finished form.",
+      "materials": "ABS, Gateron Clear Switches, Atmega32u4, Diodes, Wire",
+      "fabrication_methods": "3D Printing, hand assembly",
+      "description": "This number pad was designed the address the lack of a number pad on the Tada68, a 65%-layout keyboard. The case was designed to match the geometry of the body of the Tada68, the numpad features gateron clear switches with an actuation force of 35g.",
       "images": [
         "Tada68 Numpad Prestige Shot (Keyboard).jpg",
         "Tada68 Numpad Side View(Keyboard).jpg",
