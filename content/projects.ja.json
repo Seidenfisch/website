@@ -122,11 +122,11 @@
       "description": "60%レイアウトのキーボードで、故障した[Apple Extended Keyboard II](https://en.wikipedia.org/wiki/Apple_keyboards#Macintosh_Keyboard_(M0110))から回収した部品を使用して製作されており、白いALPSスイッチが搭載されています。 \n\nこのキーボード用の特注バックプレートは、スウェーデンのキーボード愛好家からの依頼を受けて製作されました。キーボードの基板は、ATmega32u4コントローラーを搭載し、手作業で配線されています。ABS製のスペースバーの黄ばみを取り除くために、過酸化水素が使用されました。\n\nこのキーボードは2016年にスイスの友人に贈られました。",
       "images": [
         "AEK II Final Product Prestige Shot (Keyboard).JPG",
-        "AEK II Finished Product Double Spread (Keyboard).jpg",
         "AEK II Assembly 1 Double Spread (Keyboard).jpg",
-        "AEK II Bunny Ears (Keyboard).jpg",
+        "AEK II Mini Fabrication (Keyboard).jpg",
         "AEK II Handwiring (Keyboard).JPG",
-        "AEK II Mini Fabrication (Keyboard).jpg"
+        "AEK II Finished Product Double Spread (Keyboard).jpg",
+        "AEK II Bunny Ears (Keyboard).jpg"
       ]
     },
     {

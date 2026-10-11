@@ -122,11 +122,11 @@
       "description": "Ce clavier au format 60 %, assemblé à partir de composants récupérés sur un [Apple Extended Keyboard II](https://en.wikipedia.org/wiki/Apple_keyboards#Macintosh_Keyboard_(M0110)) hors d'usage, est équipé de commutateurs ALPS blancs. \n\nLa plaque arrière sur mesure de ce clavier a été réalisée à la demande d'un autre passionné de claviers en Suède. La matrice du clavier est câblée à la main et intègre un contrôleur ATmega32u4. Du peroxyde d'hydrogène a été utilisé pour éliminer le jaunissement de la barre d'espace en ABS.\n\nCe clavier a été offert à un ami en Suisse en 2016.",
       "images": [
         "AEK II Final Product Prestige Shot (Keyboard).JPG",
-        "AEK II Finished Product Double Spread (Keyboard).jpg",
         "AEK II Assembly 1 Double Spread (Keyboard).jpg",
-        "AEK II Bunny Ears (Keyboard).jpg",
+        "AEK II Mini Fabrication (Keyboard).jpg",
         "AEK II Handwiring (Keyboard).JPG",
-        "AEK II Mini Fabrication (Keyboard).jpg"
+        "AEK II Finished Product Double Spread (Keyboard).jpg",
+        "AEK II Bunny Ears (Keyboard).jpg"
       ]
     },
     {
