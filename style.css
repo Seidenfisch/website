@@ -331,3 +331,9 @@ html[lang="ja"] .hero-tagline{letter-spacing:-.025em}
 .language-options a{display:block;padding:11px 12px;border-radius:5px;color:var(--muted);font-size:12px;font-weight:600;white-space:nowrap}
 .language-options a:hover,.language-options a[aria-current]{color:var(--accent);background:var(--surface-2)}
 @media(max-width:590px){.language-menu summary{padding:9px 10px}}
+
+/* Keep the language and Say hello buttons on the same desktop baseline. */
+@media(min-width:801px){
+  .site-header .lang-switch,.site-header .nav-contact{margin-top:5px}
+  .site-header .nav-contact,.language-menu summary{box-sizing:border-box;height:42px;display:inline-flex;align-items:center}
+}
