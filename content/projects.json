@@ -99,7 +99,8 @@
         "AEK II Assembly 1 Double Spread (Keyboard).jpg",
         "AEK II Assembly 2 Double Spread (Keyboard).jpg",
         "AEK II Bunny Ears (Keyboard).jpg",
-        "AEK II Handwiring (Keyboard).JPG"
+        "AEK II Handwiring (Keyboard).JPG",
+        "AEK II Mini Fabrication (Keyboard).jpg"
       ]
     },
     {
@@ -114,6 +115,7 @@
       "images": [
         "Tada68 Numpad Prestige Shot (Keyboard).jpg",
         "Tada68 Numpad Side View(Keyboard).jpg",
+        "Tada68 Numpad Internal View (Keyboard).jpg",
         "Tada68 Numpad Raw Case (Keyboard).jpg"
       ]
     },
@@ -128,6 +130,7 @@
       "description": "Inspired by racecar-style beds and designed as a practical joke, this state of the art input device takes the form of a standalone number pad. The keyboard matrix has been hand-wired with an Atmega32u4 breakout board, allowing for full programmability of the device.\nA red LED was added to provide for undercarriage lighting and to increase the top speed, at the cost of increased heat.\n\nThe SpeedPad was sold to a customer in the USA in 2016.",
       "images": [
         "SpeedPad Keycapless (Keyboard).jpg",
+        "SpeedPad In Use (Keyboard).jpg",
         "SpeedPad Electronics (Keyboard).jpg"
       ]
     },
@@ -141,7 +144,21 @@
       "images": [
         "PoorPad Prototype 1 (Keyboard).jpg",
         "PoorPad Prototype 2 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg"
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
+        "PoorPad PCBs (Keyboard).jpg",
+        "PoorPad Render (Keyboard).jpg"
+      ]
+    },
+    {
+      "id": "printkeeb",
+      "title": "PrintKeeb",
+      "category": "keyboards",
+      "period": "To be added",
+      "status": "To be added",
+      "description": "Assembly views from the PrintKeeb keyboard project.",
+      "images": [
+        "PrintKeeb Assembly 1 (Keyboard).jpg",
+        "PrintKeeb Assembly 2 (Keyboard).jpg"
       ]
     },
     {
