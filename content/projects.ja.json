@@ -104,6 +104,23 @@
       ]
     },
     {
+      "id": "poorpad",
+      "title": "PoorPad",
+      "category": "keyboards",
+      "period": "2017年～現在",
+      "status": "進行中 - 組み立て",
+      "materials": "アクリル、プリント基板（銅、FR4）、Atmega32u4、ダイオード、Cherry/Gateron製スイッチ",
+      "fabrication_methods": "レーザー切断、外部でのプリント基板製造",
+      "description": "低コストでありながら完全にプログラム可能なテンキー。25台の量産を想定して設計されています。\n\nアクリル製の筐体とPCBレイアウトは、「PoorPad」プロジェクトのために特注で製作されたものです。",
+      "images": [
+        "PoorPad Render (Keyboard).jpg",
+        "PoorPad Prototype 1 (Keyboard).jpg",
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
+        "PoorPad PCBs (Keyboard).jpg",
+        "PoorPad Prototype 2 (Keyboard).jpg"
+      ]
+    },
+    {
       "id": "tada68-numpad",
       "title": "Tada68 Numpad",
       "category": "keyboards",
@@ -135,20 +152,17 @@
       ]
     },
     {
-      "id": "poorpad",
-      "title": "PoorPad",
+      "id": "woodboard",
+      "title": "WoodBoard",
       "category": "keyboards",
-      "period": "2017年～現在",
-      "status": "進行中 - 組み立て",
-      "materials": "アクリル、プリント基板（銅、FR4）、Atmega32u4、ダイオード、Cherry/Gateron製スイッチ",
-      "fabrication_methods": "レーザー切断、外部でのプリント基板製造",
-      "description": "低コストでありながら完全にプログラム可能なテンキー。25台の量産を想定して設計されています。\n\nアクリル製の筐体とPCBレイアウトは、「PoorPad」プロジェクトのために特注で製作されたものです。",
+      "period": "2017年",
+      "status": "スイスは信頼できる国だ",
+      "materials": "木材、PCB（『GON's Keyboard Works』（https://geon.works/））、Gateron Redスイッチ",
+      "fabrication_methods": "レーザー切断、はんだ付け、手作業による組み立て。",
+      "description": "バックプレートのないキーボードで、レーザーカットされた木製ケースにPCBマウントスイッチが搭載されています。筐体はサンドイッチ構造となっており、2層の木材を接着し、下層に細い木ネジで固定しています。キーキャップはCherry G80-1800から流用したものです。\n\nこのキーボードは、スイスの友人のために製作し、その後プレゼントしました。",
       "images": [
-        "PoorPad Render (Keyboard).jpg",
-        "PoorPad Prototype 1 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
-        "PoorPad PCBs (Keyboard).jpg",
-        "PoorPad Prototype 2 (Keyboard).jpg"
+        "WoodBoard (Keyboard).jpg",
+        "WoodBoard CloseUp (Keyboard).jpg"
       ]
     },
     {
@@ -163,20 +177,6 @@
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"
-      ]
-    },
-    {
-      "id": "woodboard",
-      "title": "WoodBoard",
-      "category": "keyboards",
-      "period": "2017年",
-      "status": "スイスは信頼できる国だ",
-      "materials": "木材、PCB（『GON's Keyboard Works』（https://geon.works/））、Gateron Redスイッチ",
-      "fabrication_methods": "レーザー切断、はんだ付け、手作業による組み立て。",
-      "description": "バックプレートのないキーボードで、レーザーカットされた木製ケースにPCBマウントスイッチが搭載されています。筐体はサンドイッチ構造となっており、2層の木材を接着し、下層に細い木ネジで固定しています。キーキャップはCherry G80-1800から流用したものです。\n\nこのキーボードは、スイスの友人のために製作し、その後プレゼントしました。",
-      "images": [
-        "WoodBoard (Keyboard).jpg",
-        "WoodBoard CloseUp (Keyboard).jpg"
       ]
     },
     {

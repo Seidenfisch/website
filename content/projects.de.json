@@ -104,6 +104,23 @@
       ]
     },
     {
+      "id": "poorpad",
+      "title": "PoorPad",
+      "category": "keyboards",
+      "period": "2017 – heute",
+      "status": "In Bearbeitung – Montage",
+      "materials": "Acryl, Leiterplatte (Kupfer, FR4), Atmega32u4, Dioden, Cherry-/Gateron-Schalter",
+      "fabrication_methods": "Laserschneiden, externe Leiterplattenfertigung",
+      "description": "Ein Ziffernblock, der kostengünstig und vollständig programmierbar ist. Konzipiert für eine Serienproduktion von 25 Stück. \n\nDas Acrylgehäuse und das Leiterplattenlayout wurden speziell für das PoorPad-Projekt angefertigt.",
+      "images": [
+        "PoorPad Render (Keyboard).jpg",
+        "PoorPad Prototype 1 (Keyboard).jpg",
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
+        "PoorPad PCBs (Keyboard).jpg",
+        "PoorPad Prototype 2 (Keyboard).jpg"
+      ]
+    },
+    {
       "id": "tada68-numpad",
       "title": "Tada68 Numpad",
       "category": "keyboards",
@@ -135,20 +152,17 @@
       ]
     },
     {
-      "id": "poorpad",
-      "title": "PoorPad",
+      "id": "woodboard",
+      "title": "WoodBoard",
       "category": "keyboards",
-      "period": "2017 – heute",
-      "status": "In Bearbeitung – Montage",
-      "materials": "Acryl, Leiterplatte (Kupfer, FR4), Atmega32u4, Dioden, Cherry-/Gateron-Schalter",
-      "fabrication_methods": "Laserschneiden, externe Leiterplattenfertigung",
-      "description": "Ein Ziffernblock, der kostengünstig und vollständig programmierbar ist. Konzipiert für eine Serienproduktion von 25 Stück. \n\nDas Acrylgehäuse und das Leiterplattenlayout wurden speziell für das PoorPad-Projekt angefertigt.",
+      "period": "2017",
+      "status": "In guten Händen, Schweiz",
+      "materials": "Holz, Leiterplatte ([GON's Keyboard Works](https://geon.works/)), Gateron Red-Schalter",
+      "fabrication_methods": "Laserschneiden, Löten, manuelle Montage.",
+      "description": "Eine Tastatur ohne Rückplatte mit einem lasergeschnittenen Holzgehäuse und Schaltern zur Leiterplattenmontage. Die Konstruktion besteht aus einem Sandwich-Gehäuse mit zwei verleimten Schichten, die mit feinen Holzschrauben an der unteren Schicht befestigt sind. Die Tastenkappen stammen von einer Cherry G80-1800.\n\nDiese Tastatur wurde für einen Freund in der Schweiz angefertigt und ihm anschließend geschenkt.",
       "images": [
-        "PoorPad Render (Keyboard).jpg",
-        "PoorPad Prototype 1 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
-        "PoorPad PCBs (Keyboard).jpg",
-        "PoorPad Prototype 2 (Keyboard).jpg"
+        "WoodBoard (Keyboard).jpg",
+        "WoodBoard CloseUp (Keyboard).jpg"
       ]
     },
     {
@@ -163,20 +177,6 @@
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"
-      ]
-    },
-    {
-      "id": "woodboard",
-      "title": "WoodBoard",
-      "category": "keyboards",
-      "period": "2017",
-      "status": "In guten Händen, Schweiz",
-      "materials": "Holz, Leiterplatte ([GON's Keyboard Works](https://geon.works/)), Gateron Red-Schalter",
-      "fabrication_methods": "Laserschneiden, Löten, manuelle Montage.",
-      "description": "Eine Tastatur ohne Rückplatte mit einem lasergeschnittenen Holzgehäuse und Schaltern zur Leiterplattenmontage. Die Konstruktion besteht aus einem Sandwich-Gehäuse mit zwei verleimten Schichten, die mit feinen Holzschrauben an der unteren Schicht befestigt sind. Die Tastenkappen stammen von einer Cherry G80-1800.\n\nDiese Tastatur wurde für einen Freund in der Schweiz angefertigt und ihm anschließend geschenkt.",
-      "images": [
-        "WoodBoard (Keyboard).jpg",
-        "WoodBoard CloseUp (Keyboard).jpg"
       ]
     },
     {

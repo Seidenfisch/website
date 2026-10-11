@@ -104,6 +104,23 @@
       ]
     },
     {
+      "id": "poorpad",
+      "title": "PoorPad",
+      "category": "keyboards",
+      "period": "2017 - Aujourd'hui",
+      "status": "En cours - Assemblage",
+      "materials": "Acrylique, circuit imprimé (cuivre, FR4), Atmega32u4, diodes, interrupteurs Cherry/Gateron",
+      "fabrication_methods": "Découpe au laser, fabrication externe de circuits imprimés",
+      "description": "Un pavé numérique conçu pour être économique et entièrement programmable. Destiné à une production en série de 25 unités. \n\nLe boîtier en acrylique et le schéma du circuit imprimé ont été réalisés sur mesure pour le projet PoorPad.",
+      "images": [
+        "PoorPad Render (Keyboard).jpg",
+        "PoorPad Prototype 1 (Keyboard).jpg",
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
+        "PoorPad PCBs (Keyboard).jpg",
+        "PoorPad Prototype 2 (Keyboard).jpg"
+      ]
+    },
+    {
       "id": "tada68-numpad",
       "title": "Tada68 Numpad",
       "category": "keyboards",
@@ -135,20 +152,17 @@
       ]
     },
     {
-      "id": "poorpad",
-      "title": "PoorPad",
+      "id": "woodboard",
+      "title": "WoodBoard",
       "category": "keyboards",
-      "period": "2017 - Aujourd'hui",
-      "status": "En cours - Assemblage",
-      "materials": "Acrylique, circuit imprimé (cuivre, FR4), Atmega32u4, diodes, interrupteurs Cherry/Gateron",
-      "fabrication_methods": "Découpe au laser, fabrication externe de circuits imprimés",
-      "description": "Un pavé numérique conçu pour être économique et entièrement programmable. Destiné à une production en série de 25 unités. \n\nLe boîtier en acrylique et le schéma du circuit imprimé ont été réalisés sur mesure pour le projet PoorPad.",
+      "period": "2017",
+      "status": "La Suisse est entre de bonnes mains",
+      "materials": "Bois, circuit imprimé ([GON's Keyboard Works](https://geon.works/)), commutateurs Gateron Red",
+      "fabrication_methods": "Découpe au laser, soudure, assemblage manuel.",
+      "description": "Un clavier sans plaque arrière, doté d’un boîtier en bois découpé au laser et équipé de commutateurs montés sur circuit imprimé. L’ensemble se présente sous la forme d’un boîtier de type « sandwich », composé de deux couches collées entre elles et fixées à la couche inférieure à l’aide de fines vis à bois. Les capuchons de touches proviennent d’un Cherry G80-1800.\n\nCe clavier a été fabriqué pour un ami en Suisse, à qui je l’ai ensuite offert.",
       "images": [
-        "PoorPad Render (Keyboard).jpg",
-        "PoorPad Prototype 1 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
-        "PoorPad PCBs (Keyboard).jpg",
-        "PoorPad Prototype 2 (Keyboard).jpg"
+        "WoodBoard (Keyboard).jpg",
+        "WoodBoard CloseUp (Keyboard).jpg"
       ]
     },
     {
@@ -163,20 +177,6 @@
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"
-      ]
-    },
-    {
-      "id": "woodboard",
-      "title": "WoodBoard",
-      "category": "keyboards",
-      "period": "2017",
-      "status": "La Suisse est entre de bonnes mains",
-      "materials": "Bois, circuit imprimé ([GON's Keyboard Works](https://geon.works/)), commutateurs Gateron Red",
-      "fabrication_methods": "Découpe au laser, soudure, assemblage manuel.",
-      "description": "Un clavier sans plaque arrière, doté d’un boîtier en bois découpé au laser et équipé de commutateurs montés sur circuit imprimé. L’ensemble se présente sous la forme d’un boîtier de type « sandwich », composé de deux couches collées entre elles et fixées à la couche inférieure à l’aide de fines vis à bois. Les capuchons de touches proviennent d’un Cherry G80-1800.\n\nCe clavier a été fabriqué pour un ami en Suisse, à qui je l’ai ensuite offert.",
-      "images": [
-        "WoodBoard (Keyboard).jpg",
-        "WoodBoard CloseUp (Keyboard).jpg"
       ]
     },
     {
