@@ -1,0 +1,14 @@
+{
+  "id": "credits",
+  "page_title": "Credits.",
+  "creative_heading": "Creative work",
+  "creative_text": "The design projects, photography, writing, and creative direction featured here are human-made by Seiden.",
+  "code_heading": "Website code",
+  "code_text": "The website code was written by AI (OpenAI's ChatGPT/Codex), with human direction and review by Seiden.",
+  "cms_heading": "Content editing",
+  "cms_text": "[Pages CMS](https://pagescms.org/) provides the lightweight editing interface connected to this site's GitHub repository.",
+  "translation_heading": "Languages & translation",
+  "translation_text": "English is the master version of this website. German, French and Japanese content is automatically translated using [DeepL](https://www.deepl.com/) and may contain inaccuracies. If versions differ, the English text takes precedence.",
+  "source_heading": "Source",
+  "source_text": "The website's source code is available on [GitHub](https://github.com/Seidenfisch/website)."
+}
