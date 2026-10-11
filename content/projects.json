@@ -155,9 +155,11 @@
       "id": "printkeeb",
       "title": "PrintKeeb",
       "category": "keyboards",
-      "period": "To be added",
-      "status": "To be added",
-      "description": "Assembly views from the PrintKeeb keyboard project.",
+      "period": "2018",
+      "status": "Abandoned",
+      "materials": "PLA",
+      "fabrication_methods": "3D-Printing",
+      "description": "A keyboard case designed to print as two split halves in order to accomodate the printbed sizes of most 3D-printers. After a few round of protoyping, the project was abandoned for a lack of technical viability relative to pre-fabricated alternatives.",
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"
