@@ -124,7 +124,7 @@
           const filename = new URL(link.getAttribute('href'), location.href).pathname.split('/').pop();
           applyLabel(link, settings[navigationPaths[filename]]);
         });
-        document.querySelectorAll('.nav-contact').forEach(link =>
+        document.querySelectorAll('.nav-contact, .about-hello').forEach(link =>
           applyLabel(link, settings.contact, true));
       })
       .catch(() => { /* Preserve the existing labels if offline or unpublished. */ });
