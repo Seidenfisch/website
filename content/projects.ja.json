@@ -197,8 +197,10 @@
       "id": "rotolamp",
       "title": "RoLa",
       "category": "lamps",
-      "period": "追記予定",
-      "status": "追記予定",
+      "period": "2018年",
+      "status": "使用中",
+      "materials": "PLA",
+      "fabrication_methods": "3Dプリント、はんだ付け、手作業による組み立て",
       "description": "このランプは、私のリビングの室内照明が不十分だった問題を解決するためにデザインされました。本体は3Dプリントで作られており、LEDストリップと調光器として機能するポテンショメータが内蔵され、汎用の12V電源で駆動します。ランプシェードを回転させることで、明るさを調節できます。",
       "images": [
         "RotoLamp Action Shot (Lamp).jpg",
