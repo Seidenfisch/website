@@ -6,6 +6,8 @@ on:
     paths:
       - content/projects.json
       - content/writing-context.json
+      - content/about.json
+      - content/credits.json
       - content/translation-overrides.json
       - scripts/translate_content.py
       - .github/workflows/translate-content.yml
@@ -36,7 +38,7 @@ jobs:
         run: python scripts/translate_content.py
       - name: Commit updated translations
         run: |
-          git add content/projects.de.json content/projects.fr.json content/projects.ja.json content/writing-context.de.json content/writing-context.fr.json content/writing-context.ja.json content/translation-state.json
+          git add content/projects.de.json content/projects.fr.json content/projects.ja.json content/writing-context.de.json content/writing-context.fr.json content/writing-context.ja.json content/about.de.json content/about.fr.json content/about.ja.json content/credits.de.json content/credits.fr.json content/credits.ja.json content/translation-state.json
           if git diff --cached --quiet; then
             echo "Translations are already up to date."
             exit 0
