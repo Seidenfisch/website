@@ -149,7 +149,7 @@
       "status": "Ausgestellt, Wohnzimmer",
       "materials": "ABS, Gateron Clear-Schalter, Atmega32u4, Dioden, Kabel",
       "fabrication_methods": "3D-Druck, manuelle Montage",
-      "description": "Dieser Ziffernblock wurde entwickelt, um das Fehlen eines Ziffernblocks bei der Tada68, einer Tastatur mit 65-%-Layout, auszugleichen. Das Gehäuse wurde so gestaltet, dass es sich der Geometrie des Gehäuses der Tada68 anpasst; der Ziffernblock ist mit transparenten Gateron-Schaltern mit einer Betätigungskraft von 35 g ausgestattet.",
+      "description": "Dieser Ziffernblock wurde entwickelt, um das Fehlen eines Ziffernblocks bei der Tada68, einer Tastatur mit 65-%-Layout, auszugleichen. Das Gehäuse wurde so gestaltet, dass es sich der Geometrie des Gehäuses der Tada68 anpasst; der Ziffernblock ist mit transparenten Gateron-Schaltern mit einer Betätigungskraft von 35 g ausgestattet.\n\nDie interne Elektronik ist handverdrahtet und verfügt über einen Atmega32u4-Controller.",
       "images": [
         "Tada68 Numpad Prestige Shot (Keyboard).jpg",
         "Tada68 Numpad Side View(Keyboard).jpg",
