@@ -155,9 +155,11 @@
       "id": "printkeeb",
       "title": "PrintKeeb",
       "category": "keyboards",
-      "period": "追記予定",
-      "status": "追記予定",
-      "description": "PrintKeebキーボードプロジェクトの組み立て風景。",
+      "period": "2018年",
+      "status": "放棄された",
+      "materials": "PLA",
+      "fabrication_methods": "3Dプリント",
+      "description": "ほとんどの3Dプリンターのプリントベッドサイズに対応できるよう、2つの分割パーツとしてプリントされるように設計されたキーボードケース。数回の試作を経て、既製品と比較して技術的な実現可能性が低いと判断され、このプロジェクトは中止となった。",
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"

@@ -155,9 +155,11 @@
       "id": "printkeeb",
       "title": "PrintKeeb",
       "category": "keyboards",
-      "period": "À ajouter",
-      "status": "À ajouter",
-      "description": "Vues de l'assemblage issues du projet de clavier PrintKeeb.",
+      "period": "2018",
+      "status": "Abandonné",
+      "materials": "PLA",
+      "fabrication_methods": "Impression 3D",
+      "description": "Un étui pour clavier conçu pour être imprimé en deux parties distinctes afin de s'adapter aux dimensions du plateau d'impression de la plupart des imprimantes 3D. Après plusieurs itérations de prototypage, le projet a été abandonné en raison d'un manque de faisabilité technique par rapport aux solutions préfabriquées.",
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"

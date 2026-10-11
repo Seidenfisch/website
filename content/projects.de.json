@@ -155,9 +155,11 @@
       "id": "printkeeb",
       "title": "PrintKeeb",
       "category": "keyboards",
-      "period": "Wird noch ergänzt",
-      "status": "Wird noch ergänzt",
-      "description": "Montageansichten aus dem PrintKeeb-Tastaturprojekt.",
+      "period": "2018",
+      "status": "Verlassen",
+      "materials": "PLA",
+      "fabrication_methods": "3D-Druck",
+      "description": "Ein Tastaturgehäuse, das so konzipiert ist, dass es in zwei getrennten Hälften gedruckt werden kann, um den Druckbettgrößen der meisten 3D-Drucker gerecht zu werden. Nach einigen Prototypenrunden wurde das Projekt aufgrund mangelnder technischer Machbarkeit im Vergleich zu vorgefertigten Alternativen aufgegeben.",
       "images": [
         "PrintKeeb Assembly 1 (Keyboard).jpg",
         "PrintKeeb Assembly 2 (Keyboard).jpg"
