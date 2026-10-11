@@ -189,8 +189,8 @@
       "show_inspirations": true,
       "description": "レースカー風のベッドから着想を得て、いたずらとして設計されたこの最先端の入力デバイスは、独立型のテンキーという形状をしています。キーボードマトリックスはATmega32u4ブレークアウトボードと手作業で配線されており、デバイスを完全にプログラムすることが可能です。\n車体下部の照明として、また最高速度を向上させるために赤いLEDが追加されましたが、その代償として発熱量が増加しました。\n\nSpeedPadは2016年に米国の顧客に販売されました。",
       "images": [
-        "SpeedPad Keycapless (Keyboard).jpg",
         "SpeedPad In Use (Keyboard).jpg",
+        "SpeedPad Keycapless (Keyboard).jpg",
         "SpeedPad Electronics (Keyboard).jpg"
       ]
     },

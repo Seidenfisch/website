@@ -189,8 +189,8 @@
       "show_inspirations": true,
       "description": "Inspiriert von Betten im Rennwagen-Stil und als Scherz konzipiert, präsentiert sich dieses hochmoderne Eingabegerät in Form eines eigenständigen Ziffernblocks. Die Tastaturmatrix wurde manuell mit einem ATmega32u4-Breakout-Board verdrahtet, wodurch das Gerät vollständig programmierbar ist.\nEine rote LED wurde hinzugefügt, um die Unterbodenbeleuchtung zu gewährleisten und die Höchstgeschwindigkeit zu erhöhen – allerdings auf Kosten einer höheren Wärmeentwicklung.\n\nDas SpeedPad wurde 2016 an einen Kunden in den USA verkauft.",
       "images": [
-        "SpeedPad Keycapless (Keyboard).jpg",
         "SpeedPad In Use (Keyboard).jpg",
+        "SpeedPad Keycapless (Keyboard).jpg",
         "SpeedPad Electronics (Keyboard).jpg"
       ]
     },
