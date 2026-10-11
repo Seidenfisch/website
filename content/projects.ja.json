@@ -136,17 +136,19 @@
     },
     {
       "id": "poorpad",
-      "title": "PoorPad Prototype",
+      "title": "PoorPad",
       "category": "keyboards",
-      "period": "追記予定",
-      "status": "追記予定",
-      "description": "アクリルケースを用いた実験的なコンパクトキーボードのプロトタイプ。",
+      "period": "2016年～2026年",
+      "status": "進行中 - 組み立て",
+      "materials": "アクリル、プリント基板（銅、FR4）、Atmega32u4、ダイオード、Cherry/Gateron製スイッチ",
+      "fabrication_methods": "レーザー切断、外部でのプリント基板製造",
+      "description": "低コストでありながら完全にプログラム可能なテンキー。25台の量産を想定して設計されています。\n\nアクリル製の筐体とPCBレイアウトは、「PoorPad」プロジェクトのために特注で製作されたものです。",
       "images": [
+        "PoorPad Render (Keyboard).jpg",
         "PoorPad Prototype 1 (Keyboard).jpg",
-        "PoorPad Prototype 2 (Keyboard).jpg",
         "PoorPad Acrylic Case Protoype (Keyboard).jpg",
         "PoorPad PCBs (Keyboard).jpg",
-        "PoorPad Render (Keyboard).jpg"
+        "PoorPad Prototype 2 (Keyboard).jpg"
       ]
     },
     {
