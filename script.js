@@ -117,7 +117,8 @@ if (detail) {
       [ui('Category'), displayCategory[project.category]],
       [ui('Status / whereabouts'), project.status],
       [ui('Materials'), project.materials],
-      [ui('Fabrication methods'), project.fabrication_methods]
+      [ui('Fabrication methods'), project.fabrication_methods],
+      [ui('Inspirations'), project.inspirations]
     ];
     for (const [label, value] of metadataRows) {
       const row = document.createElement('tr');
