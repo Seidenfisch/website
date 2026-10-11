@@ -1,14 +1,32 @@
 {
   "de": {
     "projects": {},
-    "writing-context": {}
+    "writing-context": {},
+    "about": {
+      "about": {
+        "headline_first": "Wenig zu sagen,",
+        "headline_accent": "viel zu tun."
+      }
+    }
   },
   "fr": {
     "projects": {},
-    "writing-context": {}
+    "writing-context": {},
+    "about": {
+      "about": {
+        "headline_first": "Peu à dire,",
+        "headline_accent": "tant à faire."
+      }
+    }
   },
   "ja": {
     "projects": {},
-    "writing-context": {}
+    "writing-context": {},
+    "about": {
+      "about": {
+        "headline_first": "語ることは少なく、",
+        "headline_accent": "やることは多い。"
+      }
+    }
   }
 }
