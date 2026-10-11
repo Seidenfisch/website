@@ -97,7 +97,7 @@ if (detail) {
     link.textContent = ui('← Back to all projects');
     detail.append(heading,link);
   } else {
-    document.title = project.title + ' — Seiden Design Labs';
+    document.title = project.title + ' — SDL';
     const heading = document.createElement('h1');
     heading.textContent = project.title;
     const subtitle = document.createElement('p');
