@@ -37,6 +37,16 @@ Open **Navigation labels** to edit the buttons in the header for **Home**, **Wor
 - If a translated label is blank, the English label is used as a fallback.
 - If JavaScript is disabled or settings cannot be loaded, the existing HTML navigation labels are shown.
 
+## About page
+
+Open **About page** in Pages CMS to edit the first headline line, the blue-accent second line, short introduction, interests, portrait image path and descriptive alt text. The image path is relative to the repository root, e.g. `Seiden (Photo of Author).jpg` or `assets/uploads/portrait.jpg`. The lower **Say hello** button uses the label from **Navigation labels** and keeps the fixed email link.
+
+## Credits page
+
+Open **Credits page** to edit each heading and acknowledgement, including the automatic-translation disclaimer and credits for Pages CMS, DeepL and GitHub. Body text supports safe Markdown links in the form `[Pages CMS](https://pagescms.org/)`.
+
+**Translation:** About and Credits text is edited in English. Changes trigger the existing DeepL workflow to update German, French and Japanese. The translation state skips unchanged fields, and advanced manual translation overrides remain available in `content/translation-overrides.json`. The photo path and record identifiers are not translated. Until translations are ready, existing translated HTML remains visible.
+
 ## Publishing
 
 Pages CMS commits edits to GitHub. If editing `main`, GitHub Pages normally deploys them automatically. A hard refresh might be necessary if a browser has cached an old page.
