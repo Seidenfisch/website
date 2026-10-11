@@ -111,20 +111,44 @@ content:
             required: true
             description: "Matches the article filename without .html; do not change existing identifiers."
           - name: title
-            label: Article title
+            label: Short article title / browser tab
             type: string
             required: true
-            description: "The human-readable title shown in the Pages CMS editor."
+            description: "Short label used in Pages CMS and the article browser tab."
+          - name: headline
+            label: Article headline
+            type: text
+            description: "Full visible heading on the article page and Writing archive. The article body remains in HTML."
           - name: period
             label: Date / period
             type: string
+          - name: show_period
+            label: Show date / period
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail without deleting its text."
           - name: type
             label: Type
             type: string
+          - name: show_type
+            label: Show type
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail without deleting its text."
           - name: status
             label: Status / whereabouts
             type: string
+          - name: show_status
+            label: Show status / whereabouts
+            type: boolean
+            default: true
+            description: "Turn off to hide this detail without deleting its text."
           - name: note
             label: Context note
             type: text
             description: "Supports Markdown links [label](https://example.com), **bold**, *italics*, and line breaks."
+          - name: show_note
+            label: Show context note
+            type: boolean
+            default: true
+            description: "Turn off to hide the note without deleting its text."
