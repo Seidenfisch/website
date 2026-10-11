@@ -106,10 +106,10 @@
         const applyLabel = (link, item, preserveArrow = false) => {
           if (!item || typeof item !== 'object') return;
           if (item.visible === false) {
-            link.hidden = true;
+            link.style.display = 'none';
             return;
           }
-          link.hidden = false;
+          link.style.display = '';
           const value = item[language] || item.en;
           if (typeof value !== 'string' || !value.trim()) return;
           if (preserveArrow) {
