@@ -23,16 +23,21 @@ LANGUAGES = ("de", "fr", "ja")
 COLLECTIONS = {
     "projects": ("id", ("period", "status", "materials", "fabrication_methods", "inspirations", "description")),
     "writing-context": ("slug", ("period", "type", "status", "note")),
+    "about": ("id", ("headline_first", "headline_accent", "intro", "interests", "portrait_alt")),
+    "credits": ("id", ("page_title", "creative_heading", "creative_text", "code_heading", "code_text", "cms_heading", "cms_text", "translation_heading", "translation_text", "source_heading", "source_text")),
 }
 STATE_FILE = CONTENT / "translation-state.json"
 OVERRIDES_FILE = CONTENT / "translation-overrides.json"
 
 COLLECTION_KEYS = {"projects": "projects", "writing-context": "writing_contexts"}
+SINGLETONS = {"about", "credits"}
 
 
 def collection_rows(data, collection):
     """Accept old top-level arrays and new Pages CMS named object lists."""
-    if isinstance(data, dict):
+    if collection in SINGLETONS and isinstance(data, dict):
+        data = [data]
+    elif isinstance(data, dict):
         data = data.get(COLLECTION_KEYS[collection])
     if not isinstance(data, list):
         raise ValueError(f"{collection}.json must contain a list of entries")
@@ -196,7 +201,8 @@ def main():
     for language in LANGUAGES:
         for collection in COLLECTIONS:
             changed += write_json(CONTENT / f"{collection}.{language}.json",
-                                  {COLLECTION_KEYS[collection]: output[language][collection]})
+                                  (output[language][collection][0] if collection in SINGLETONS
+                                   else {COLLECTION_KEYS[collection]: output[language][collection]}))
     changed += write_json(STATE_FILE, state)
     print(f"Updated {changed} content files")
 
