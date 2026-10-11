@@ -269,3 +269,83 @@ content:
             type: boolean
             default: true
             description: "Hide this button without losing its labels."
+
+  - name: about_page
+    label: About page
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: id
+        label: "Record identifier"
+        type: string
+        hidden: true
+        description: "Internal fixed identifier used by the translation workflow."
+      - name: headline_first
+        label: "First headline line"
+        type: string
+      - name: headline_accent
+        label: "Blue headline line"
+        type: string
+      - name: intro
+        label: "Short introduction"
+        type: text
+      - name: interests
+        label: "Interests line"
+        type: text
+      - name: portrait
+        label: "Portrait image path"
+        type: string
+      - name: portrait_alt
+        label: "Portrait alt text"
+        type: string
+
+  - name: credits_page
+    label: Credits page
+    type: file
+    path: content/credits.json
+    format: json
+    fields:
+      - name: id
+        label: "Record identifier"
+        type: string
+        hidden: true
+        description: "Internal fixed identifier used by the translation workflow."
+      - name: page_title
+        label: "Page title"
+        type: string
+      - name: creative_heading
+        label: "Creative work heading"
+        type: string
+      - name: creative_text
+        label: "Creative work text"
+        type: text
+        description: "Supports Markdown links such as [name](https://example.com)."
+      - name: code_heading
+        label: "Website code heading"
+        type: string
+      - name: code_text
+        label: "Website code text"
+        type: text
+        description: "Supports Markdown links such as [name](https://example.com)."
+      - name: cms_heading
+        label: "Content editing heading"
+        type: string
+      - name: cms_text
+        label: "Content editing text"
+        type: text
+        description: "Supports Markdown links such as [name](https://example.com)."
+      - name: translation_heading
+        label: "Translation heading"
+        type: string
+      - name: translation_text
+        label: "Translation disclaimer"
+        type: text
+        description: "Supports Markdown links such as [name](https://example.com)."
+      - name: source_heading
+        label: "Source heading"
+        type: string
+      - name: source_text
+        label: "Source text"
+        type: text
+        description: "Supports Markdown links such as [name](https://example.com)."
