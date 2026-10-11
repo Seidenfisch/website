@@ -203,9 +203,9 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 @media(max-width:590px){.article-context{padding:20px 22px;margin-bottom:36px}.writing-index .writing-card + .writing-card{margin-top:40px}}
 
 /* Align the two blue Build phrases in a shared column. */
-.hero h1.hero-tagline{display:grid;grid-template-columns:max-content max-content;column-gap:.23em;row-gap:0;width:max-content;max-width:100%}
+.hero h1.hero-tagline{display:grid;grid-template-columns:max-content max-content;column-gap:.23em;row-gap:0;width:max-content;max-width:100%;font-size:clamp(32px,5.7vw,80px)}
 .hero-tagline>span,.hero-tagline>em{white-space:nowrap}
-@media(max-width:590px){.hero h1.hero-tagline{font-size:clamp(27px,8.5vw,45px);column-gap:.18em}}
+@media(max-width:590px){.hero h1.hero-tagline{font-size:clamp(22px,7vw,34px);column-gap:.18em}}
 
 /* Match work project context panels to writing metadata blocks. */
 .project-description h2{font-size:15px;letter-spacing:-.02em;margin:0 0 10px}
@@ -260,12 +260,10 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .lang-switch a:hover{color:var(--text)}
 .lang-switch a[aria-current]{background:var(--surface-2);color:var(--accent)}
 .translation-note{border-left:2px solid var(--accent);padding:10px 14px;margin:8px 0 25px;color:var(--muted);font-size:13px;line-height:1.6}
-html[lang^="de"] .hero h1.hero-tagline,html[lang^="fr"] .hero h1.hero-tagline,html[lang^="ja"] .hero h1.hero-tagline,html[lang^="ja"] .hero h1.hero-tagline{font-size:clamp(30px,5.2vw,74px)}
 @media(max-width:800px){.site-header{gap:16px}.nav-links{gap:18px}}
 @media(max-width:590px){
  .lang-switch{margin-left:auto;padding-left:8px;border-left:0}
  .lang-switch a{padding:8px 7px}
- html[lang^="de"] .hero h1.hero-tagline,html[lang^="fr"] .hero h1.hero-tagline{font-size:clamp(19px,5.2vw,31px)}
 }
 
 /* Japanese copy uses local CJK fonts without loading a separate webfont. */
