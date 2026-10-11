@@ -148,8 +148,8 @@
       "period": "2016",
       "status": "En exposition, salon",
       "materials": "ABS, commutateurs Gateron Clear, Atmega32u4, diodes, fil",
-      "fabrication_methods": "Impression 3D, assemblage manuel",
-      "description": "Ce pavé numérique a été conçu pour pallier l'absence de pavé numérique sur le Tada68, un clavier au format 65 %. Le boîtier a été conçu pour s'adapter à la géométrie du corps du Tada68 ; le pavé numérique est équipé de commutateurs Gateron transparents offrant une force d'actionnement de 35 g.\n\nL'électronique interne est câblée à la main et intègre un contrôleur Atmega32u4.",
+      "fabrication_methods": "Impression 3D, assemblage manuel, peinture à la bombe",
+      "description": "Ce pavé numérique a été conçu pour pallier l'absence de pavé numérique sur le Tada68, un clavier au format 65 %. Le boîtier a été conçu pour s'adapter à la géométrie du corps du Tada68 ; le pavé numérique est équipé de commutateurs Gateron transparents offrant une force d'actionnement de 35 g. L'électronique interne est câblée à la main et intègre un contrôleur Atmega32u4. De la peinture en spray a été utilisée pour lisser la surface imprimée en 3D.\n\nCe pavé numérique est actuellement exposé dans mon salon.",
       "images": [
         "Tada68 Numpad Prestige Shot (Keyboard).jpg",
         "Tada68 Numpad Side View(Keyboard).jpg",
