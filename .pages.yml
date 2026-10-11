@@ -53,6 +53,10 @@ content:
             label: Fabrication methods
             type: text
             description: "How the project was made, such as 3D printing, CNC machining, welding, or hand assembly."
+          - name: inspirations
+            label: Inspirations
+            type: text
+            description: "People, objects, references, or designs that inspired this project. Supports Markdown links [label](https://example.com), **bold**, *italics*, and line breaks."
           - name: description
             label: Project description
             type: text
