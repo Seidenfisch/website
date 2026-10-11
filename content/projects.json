@@ -122,11 +122,11 @@
       "description": "A keyboard with a 60% layout, built using components harvested from a broken [Apple Extended Keyboard II](https://en.wikipedia.org/wiki/Apple_keyboards#Macintosh_Keyboard_(M0110)), this keyboard is equipped with white ALPS switches. \n\nThe custom backplate for this keyboard was made on request by a fellow keyboard enthusiast in Sweden. The keyboard matrix is hand-wired with an ATmega32u4 controller. Hydrogen peroxide was used to reverse the yellowing on the ABS spacebar.\n\nThe keyboard was given to a friend in Switzerland in 2016.",
       "images": [
         "AEK II Final Product Prestige Shot (Keyboard).JPG",
-        "AEK II Finished Product Double Spread (Keyboard).jpg",
         "AEK II Assembly 1 Double Spread (Keyboard).jpg",
-        "AEK II Bunny Ears (Keyboard).jpg",
+        "AEK II Mini Fabrication (Keyboard).jpg",
         "AEK II Handwiring (Keyboard).JPG",
-        "AEK II Mini Fabrication (Keyboard).jpg"
+        "AEK II Finished Product Double Spread (Keyboard).jpg",
+        "AEK II Bunny Ears (Keyboard).jpg"
       ]
     },
     {
