@@ -5,14 +5,16 @@
       "title": "Krispy Kreme Breach",
       "period": "2024",
       "type": "Satire",
-      "note": "Cet article a été initialement rédigé dans le cadre d'un cours sur la cybersécurité ; il est reproduit ici dans l'intérêt de l'humanité tout entière."
+      "note": "Cet article a été initialement rédigé dans le cadre d'un cours sur la cybersécurité ; il est reproduit ici dans l'intérêt de l'humanité tout entière.",
+      "headline": "Krispy Kreme customers face threat of hypoglycemia after cyber-attack disrupts online orders"
     },
     {
       "slug": "men-of-my-village",
       "title": "The Men of my Village",
       "period": "2024",
       "type": "Fiction",
-      "note": "On ignore pour l'instant pourquoi ce reportage a été réalisé."
+      "note": "On ignore pour l'instant pourquoi ce reportage a été réalisé.",
+      "headline": "The Men of my Village"
     }
   ]
 }

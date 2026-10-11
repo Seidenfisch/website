@@ -5,14 +5,16 @@
       "title": "Krispy Kreme Breach",
       "period": "2024年",
       "type": "風刺",
-      "note": "この記事はもともとサイバーセキュリティの授業のために執筆されたものですが、人類全体の利益のためにここに転載しています。"
+      "note": "この記事はもともとサイバーセキュリティの授業のために執筆されたものですが、人類全体の利益のためにここに転載しています。",
+      "headline": "Krispy Kreme customers face threat of hypoglycemia after cyber-attack disrupts online orders"
     },
     {
       "slug": "men-of-my-village",
       "title": "The Men of my Village",
       "period": "2024年",
       "type": "小説",
-      "note": "この物語が制作された理由は、現時点では明らかになっていない。"
+      "note": "この物語が制作された理由は、現時点では明らかになっていない。",
+      "headline": "The Men of my Village"
     }
   ]
 }
