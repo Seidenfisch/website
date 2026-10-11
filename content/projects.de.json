@@ -145,10 +145,10 @@
       "show_inspirations": true,
       "description": "Ein Ziffernblock, der kostengünstig und vollständig programmierbar ist. Konzipiert für eine Serienproduktion von 25 Stück. \n\nDas Acrylgehäuse und das Leiterplattenlayout wurden speziell für das PoorPad-Projekt angefertigt.",
       "images": [
+        "PoorPad PCBs (Keyboard).jpg",
         "PoorPad Render (Keyboard).jpg",
         "PoorPad Prototype 1 (Keyboard).jpg",
         "PoorPad Acrylic Case Protoype (Keyboard).jpg",
-        "PoorPad PCBs (Keyboard).jpg",
         "PoorPad Prototype 2 (Keyboard).jpg"
       ]
     },
