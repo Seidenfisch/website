@@ -152,3 +152,120 @@ content:
             type: boolean
             default: true
             description: "Turn off to hide the note without deleting its text."
+
+  - name: navigation
+    label: Navigation labels
+    type: file
+    path: content/navigation.json
+    format: json
+    fields:
+      - name: home
+        label: "Home button"
+        type: object
+        fields:
+          - name: en
+            label: "English (master) label"
+            type: string
+            required: true
+          - name: de
+            label: "German label"
+            type: string
+          - name: fr
+            label: "French label"
+            type: string
+          - name: ja
+            label: "Japanese label"
+            type: string
+          - name: visible
+            label: Show button
+            type: boolean
+            default: true
+            description: "Hide this button without losing its labels."
+      - name: work
+        label: "Work button"
+        type: object
+        fields:
+          - name: en
+            label: "English (master) label"
+            type: string
+            required: true
+          - name: de
+            label: "German label"
+            type: string
+          - name: fr
+            label: "French label"
+            type: string
+          - name: ja
+            label: "Japanese label"
+            type: string
+          - name: visible
+            label: Show button
+            type: boolean
+            default: true
+            description: "Hide this button without losing its labels."
+      - name: writing
+        label: "Writing button"
+        type: object
+        fields:
+          - name: en
+            label: "English (master) label"
+            type: string
+            required: true
+          - name: de
+            label: "German label"
+            type: string
+          - name: fr
+            label: "French label"
+            type: string
+          - name: ja
+            label: "Japanese label"
+            type: string
+          - name: visible
+            label: Show button
+            type: boolean
+            default: true
+            description: "Hide this button without losing its labels."
+      - name: about
+        label: "About button"
+        type: object
+        fields:
+          - name: en
+            label: "English (master) label"
+            type: string
+            required: true
+          - name: de
+            label: "German label"
+            type: string
+          - name: fr
+            label: "French label"
+            type: string
+          - name: ja
+            label: "Japanese label"
+            type: string
+          - name: visible
+            label: Show button
+            type: boolean
+            default: true
+            description: "Hide this button without losing its labels."
+      - name: contact
+        label: "Say hello button"
+        type: object
+        fields:
+          - name: en
+            label: "English (master) label"
+            type: string
+            required: true
+          - name: de
+            label: "German label"
+            type: string
+          - name: fr
+            label: "French label"
+            type: string
+          - name: ja
+            label: "Japanese label"
+            type: string
+          - name: visible
+            label: Show button
+            type: boolean
+            default: true
+            description: "Hide this button without losing its labels."
