@@ -5,7 +5,8 @@
     "about": {
       "about": {
         "headline_first": "Wenig zu sagen,",
-        "headline_accent": "viel zu tun."
+        "headline_accent": "viel zu tun.",
+        "intro": "Seit 2018 entstehen in Biel/Bienne ungewöhnliche Dinge."
       }
     }
   },
@@ -15,7 +16,8 @@
     "about": {
       "about": {
         "headline_first": "Peu à dire,",
-        "headline_accent": "tant à faire."
+        "headline_accent": "tant à faire.",
+        "intro": "Des créations insolites à Bienne/Biel depuis 2018."
       }
     }
   },
@@ -25,7 +27,8 @@
     "about": {
       "about": {
         "headline_first": "語ることは少なく、",
-        "headline_accent": "やることは多い。"
+        "headline_accent": "やることは多い。",
+        "intro": "2018年からビール／ビエンヌで、少し変わったものをつくっています。"
       }
     }
   }
