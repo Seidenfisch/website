@@ -92,12 +92,38 @@
     t: key => (translations[language] && translations[language][key]) || key
   };
   document.addEventListener('DOMContentLoaded', () => {
-    // Preserve the project id and any anchor when switching language.
-    document.querySelectorAll('.lang-switch a').forEach(link => {
-      const url = new URL(link.getAttribute('href'), location.href);
-      url.search = location.search;
-      url.hash = location.hash;
-      link.href = url.href;
+    // Turn the existing crawlable language links into one accessible dropdown.
+    document.querySelectorAll('.lang-switch').forEach(nav => {
+      const links = [...nav.querySelectorAll('a')];
+      if (!links.length) return;
+      links.forEach(link => {
+        // Preserve project IDs, query parameters and anchors when switching.
+        const url = new URL(link.getAttribute('href'), location.href);
+        url.search = location.search;
+        url.hash = location.hash;
+        link.href = url.href;
+      });
+      const current = links.find(link => link.hasAttribute('aria-current')) || links[0];
+      const menu = document.createElement('details');
+      menu.className = 'language-menu';
+      const trigger = document.createElement('summary');
+      const currentLabel = current.textContent.trim();
+      trigger.textContent = currentLabel;
+      trigger.setAttribute('aria-label', 'Choose language; current: ' + currentLabel);
+      const options = document.createElement('div');
+      options.className = 'language-options';
+      options.append(...links);
+      menu.append(trigger, options);
+      nav.replaceChildren(menu);
+      menu.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && menu.open) {
+          menu.open = false;
+          trigger.focus();
+        }
+      });
+      document.addEventListener('click', event => {
+        if (menu.open && !menu.contains(event.target)) menu.open = false;
+      });
     });
   });
 })();
