@@ -92,6 +92,42 @@
     t: key => (translations[language] && translations[language][key]) || key
   };
   document.addEventListener('DOMContentLoaded', () => {
+    // CMS-controlled navigation wording. Static HTML remains a usable fallback.
+    // Links are matched by their fixed filenames, never by editable label text.
+    const navigationPaths = { 'index.html': 'home', 'photos.html': 'work',
+      'writing.html': 'writing', 'about.html': 'about' };
+    fetch(root + 'content/navigation.json', { cache: 'no-cache' })
+      .then(response => {
+        if (!response.ok) throw new Error('Navigation settings unavailable');
+        return response.json();
+      })
+      .then(settings => {
+        if (!settings || typeof settings !== 'object') return;
+        const applyLabel = (link, item, preserveArrow = false) => {
+          if (!item || typeof item !== 'object') return;
+          if (item.visible === false) {
+            link.hidden = true;
+            return;
+          }
+          link.hidden = false;
+          const value = item[language] || item.en;
+          if (typeof value !== 'string' || !value.trim()) return;
+          if (preserveArrow) {
+            const arrow = link.querySelector('[aria-hidden="true"]');
+            link.replaceChildren(document.createTextNode(value.trim() + ' '));
+            if (arrow) link.append(arrow);
+          } else {
+            link.textContent = value.trim();
+          }
+        };
+        document.querySelectorAll('.nav-links a[href]').forEach(link => {
+          const filename = new URL(link.getAttribute('href'), location.href).pathname.split('/').pop();
+          applyLabel(link, settings[navigationPaths[filename]]);
+        });
+        document.querySelectorAll('.nav-contact').forEach(link =>
+          applyLabel(link, settings.contact, true));
+      })
+      .catch(() => { /* Preserve the existing labels if offline or unpublished. */ });
     // Turn the existing crawlable language links into one accessible dropdown.
     document.querySelectorAll('.lang-switch').forEach(nav => {
       const links = [...nav.querySelectorAll('a')];
