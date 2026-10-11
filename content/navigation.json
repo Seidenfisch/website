@@ -1,0 +1,37 @@
+{
+  "home": {
+    "en": "Home",
+    "de": "Start",
+    "fr": "Accueil",
+    "ja": "ホーム",
+    "visible": true
+  },
+  "work": {
+    "en": "Work",
+    "de": "Arbeiten",
+    "fr": "Projets",
+    "ja": "作品",
+    "visible": true
+  },
+  "writing": {
+    "en": "Writing",
+    "de": "Texte",
+    "fr": "Écrits",
+    "ja": "文章",
+    "visible": true
+  },
+  "about": {
+    "en": "About",
+    "de": "Über mich",
+    "fr": "À propos",
+    "ja": "プロフィール",
+    "visible": true
+  },
+  "contact": {
+    "en": "Say hello",
+    "de": "Kontakt",
+    "fr": "Contact",
+    "ja": "お問い合わせ",
+    "visible": true
+  }
+}
