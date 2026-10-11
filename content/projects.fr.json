@@ -147,7 +147,7 @@
       "materials": "ABS, commutateurs Gateron Red, carte d'extension Atmega32u4, diodes, câble, colle",
       "fabrication_methods": "Impression 3D, assemblage manuel",
       "inspirations": "[Lit en forme de voiture de course de Van Houten](https://www.youtube.com/watch?v=Ul6UcvNX4o8)",
-      "description": "Inspiré des sièges de voiture de course et conçu comme une blague, ce périphérique de saisie à la pointe de la technologie prend la forme d’un pavé numérique autonome. La matrice du clavier a été câblée à la main à l’aide d’une carte d’extension Atmega32u4, ce qui permet une programmabilité totale de l’appareil.\nUne LED rouge a été ajoutée pour éclairer le châssis et augmenter la vitesse de pointe, au prix d'une augmentation de la chaleur dégagée.\n\nLe SpeedPad a été vendu à un client aux États-Unis en 2016.",
+      "description": "Inspiré des sièges de voiture de course et conçu comme une blague, ce périphérique de saisie à la pointe de la technologie prend la forme d’un pavé numérique autonome. La matrice du clavier a été câblée à la main à l’aide d’une carte d’extension ATmega32u4, ce qui permet une programmabilité totale de l’appareil.\nUne LED rouge a été ajoutée pour éclairer le dessous de l'appareil et augmenter la vitesse de pointe, au prix d'une chaleur accrue.\n\nLe SpeedPad a été vendu à un client aux États-Unis en 2016.",
       "images": [
         "SpeedPad Keycapless (Keyboard).jpg",
         "SpeedPad In Use (Keyboard).jpg",

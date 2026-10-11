@@ -147,7 +147,7 @@
       "materials": "ABS, Gateron Red-Schalter, Atmega32u4-Breakout-Board, Dioden, Kabel, Kleber",
       "fabrication_methods": "3D-Druck, manuelle Montage",
       "inspirations": "[Rennwagenbett von Van Houten](https://www.youtube.com/watch?v=Ul6UcvNX4o8)",
-      "description": "Inspiriert von Betten im Rennwagen-Stil und als Streich konzipiert, präsentiert sich dieses hochmoderne Eingabegerät in Form eines eigenständigen Ziffernblocks. Die Tastaturmatrix wurde manuell mit einem Atmega32u4-Breakout-Board verdrahtet, wodurch das Gerät vollständig programmierbar ist.\nEine rote LED wurde hinzugefügt, um die Unterbodenbeleuchtung zu gewährleisten und die Höchstgeschwindigkeit zu erhöhen – allerdings auf Kosten einer höheren Wärmeentwicklung.\n\nDas SpeedPad wurde 2016 an einen Kunden in den USA verkauft.",
+      "description": "Inspiriert von Betten im Rennwagen-Stil und als Scherz konzipiert, präsentiert sich dieses hochmoderne Eingabegerät in Form eines eigenständigen Ziffernblocks. Die Tastaturmatrix wurde manuell mit einem ATmega32u4-Breakout-Board verdrahtet, wodurch das Gerät vollständig programmierbar ist.\nEine rote LED wurde hinzugefügt, um die Unterbodenbeleuchtung zu gewährleisten und die Höchstgeschwindigkeit zu erhöhen – allerdings auf Kosten einer höheren Wärmeentwicklung.\n\nDas SpeedPad wurde 2016 an einen Kunden in den USA verkauft.",
       "images": [
         "SpeedPad Keycapless (Keyboard).jpg",
         "SpeedPad In Use (Keyboard).jpg",
