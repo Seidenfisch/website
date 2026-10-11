@@ -99,7 +99,8 @@
         "AEK II Assembly 1 Double Spread (Keyboard).jpg",
         "AEK II Assembly 2 Double Spread (Keyboard).jpg",
         "AEK II Bunny Ears (Keyboard).jpg",
-        "AEK II Handwiring (Keyboard).JPG"
+        "AEK II Handwiring (Keyboard).JPG",
+        "AEK II Mini Fabrication (Keyboard).jpg"
       ]
     },
     {
@@ -114,6 +115,7 @@
       "images": [
         "Tada68 Numpad Prestige Shot (Keyboard).jpg",
         "Tada68 Numpad Side View(Keyboard).jpg",
+        "Tada68 Numpad Internal View (Keyboard).jpg",
         "Tada68 Numpad Raw Case (Keyboard).jpg"
       ]
     },
@@ -128,6 +130,7 @@
       "description": "Inspiré des sièges de voiture de course et conçu comme une blague, ce périphérique de saisie à la pointe de la technologie prend la forme d’un pavé numérique autonome. La matrice du clavier a été câblée à la main à l’aide d’une carte d’extension Atmega32u4, ce qui permet une programmabilité totale de l’appareil.\nUne LED rouge a été ajoutée pour éclairer le châssis et augmenter la vitesse de pointe, au prix d'une augmentation de la chaleur dégagée.\n\nLe SpeedPad a été vendu à un client aux États-Unis en 2016.",
       "images": [
         "SpeedPad Keycapless (Keyboard).jpg",
+        "SpeedPad In Use (Keyboard).jpg",
         "SpeedPad Electronics (Keyboard).jpg"
       ]
     },
@@ -141,7 +144,21 @@
       "images": [
         "PoorPad Prototype 1 (Keyboard).jpg",
         "PoorPad Prototype 2 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg"
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
+        "PoorPad PCBs (Keyboard).jpg",
+        "PoorPad Render (Keyboard).jpg"
+      ]
+    },
+    {
+      "id": "printkeeb",
+      "title": "PrintKeeb",
+      "category": "keyboards",
+      "period": "À ajouter",
+      "status": "À ajouter",
+      "description": "Vues de l'assemblage issues du projet de clavier PrintKeeb.",
+      "images": [
+        "PrintKeeb Assembly 1 (Keyboard).jpg",
+        "PrintKeeb Assembly 2 (Keyboard).jpg"
       ]
     },
     {

@@ -99,7 +99,8 @@
         "AEK II Assembly 1 Double Spread (Keyboard).jpg",
         "AEK II Assembly 2 Double Spread (Keyboard).jpg",
         "AEK II Bunny Ears (Keyboard).jpg",
-        "AEK II Handwiring (Keyboard).JPG"
+        "AEK II Handwiring (Keyboard).JPG",
+        "AEK II Mini Fabrication (Keyboard).jpg"
       ]
     },
     {
@@ -114,6 +115,7 @@
       "images": [
         "Tada68 Numpad Prestige Shot (Keyboard).jpg",
         "Tada68 Numpad Side View(Keyboard).jpg",
+        "Tada68 Numpad Internal View (Keyboard).jpg",
         "Tada68 Numpad Raw Case (Keyboard).jpg"
       ]
     },
@@ -128,6 +130,7 @@
       "description": "レースカー風のベッドから着想を得て、いたずらとして設計されたこの最先端の入力デバイスは、独立型のテンキーという形状をしています。キーボードマトリックスにはAtmega32u4ブレークアウトボードが手作業で配線されており、デバイスを完全にプログラムすることが可能です。\n車体下部の照明として、また最高速度を向上させるために赤いLEDが追加されましたが、その代償として発熱量が増加しました。\n\nSpeedPadは2016年に米国の顧客に販売されました。",
       "images": [
         "SpeedPad Keycapless (Keyboard).jpg",
+        "SpeedPad In Use (Keyboard).jpg",
         "SpeedPad Electronics (Keyboard).jpg"
       ]
     },
@@ -141,7 +144,21 @@
       "images": [
         "PoorPad Prototype 1 (Keyboard).jpg",
         "PoorPad Prototype 2 (Keyboard).jpg",
-        "PoorPad Acrylic Case Protoype (Keyboard).jpg"
+        "PoorPad Acrylic Case Protoype (Keyboard).jpg",
+        "PoorPad PCBs (Keyboard).jpg",
+        "PoorPad Render (Keyboard).jpg"
+      ]
+    },
+    {
+      "id": "printkeeb",
+      "title": "PrintKeeb",
+      "category": "keyboards",
+      "period": "追記予定",
+      "status": "追記予定",
+      "description": "PrintKeebキーボードプロジェクトの組み立て風景。",
+      "images": [
+        "PrintKeeb Assembly 1 (Keyboard).jpg",
+        "PrintKeeb Assembly 2 (Keyboard).jpg"
       ]
     },
     {
