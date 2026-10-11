@@ -1,0 +1,14 @@
+{
+  "id": "credits",
+  "page_title": "Générique.",
+  "creative_heading": "Travail créatif",
+  "creative_text": "Les projets de design, les photographies, les textes et la direction artistique présentés ici sont l'œuvre de Seiden.",
+  "code_heading": "Code du site web",
+  "code_text": "Le code du site web a été rédigé par une IA (ChatGPT/Codex d'OpenAI), sous la supervision et après révision par Seiden.",
+  "cms_heading": "Édition de contenu",
+  "cms_text": "[Pages CMS](https://pagescms.org/) fournit une interface d'édition légère reliée au dépôt GitHub de ce site.",
+  "translation_heading": "Langues et traduction",
+  "translation_text": "La version anglaise est la version de référence de ce site web. Les contenus en allemand, en français et en japonais sont traduits automatiquement à l'aide de [DeepL](https://www.deepl.com/) et peuvent comporter des inexactitudes. En cas de divergence entre les versions, le texte anglais fait foi.",
+  "source_heading": "Source",
+  "source_text": "Le code source du site web est disponible sur [GitHub](https://github.com/Seidenfisch/website)."
+}

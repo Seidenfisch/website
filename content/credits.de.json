@@ -1,0 +1,14 @@
+{
+  "id": "credits",
+  "page_title": "Abspann.",
+  "creative_heading": "Kreative Arbeit",
+  "creative_text": "Die hier vorgestellten Designprojekte, Fotos, Texte und die kreative Leitung stammen von Seiden.",
+  "code_heading": "Website-Code",
+  "code_text": "Der Code der Website wurde von einer KI (ChatGPT/Codex von OpenAI) erstellt, unter menschlicher Anleitung und Überprüfung durch Seiden.",
+  "cms_heading": "Bearbeitung von Inhalten",
+  "cms_text": "[Pages CMS](https://pagescms.org/) bietet eine schlanke Bearbeitungsoberfläche, die mit dem GitHub-Repository dieser Website verbunden ist.",
+  "translation_heading": "Sprachen & Übersetzung",
+  "translation_text": "Die englische Version dieser Website ist die maßgebliche Fassung. Die deutschen, französischen und japanischen Inhalte werden automatisch mit [DeepL](https://www.deepl.com/) übersetzt und können Ungenauigkeiten enthalten. Bei Abweichungen zwischen den verschiedenen Versionen ist der englische Text maßgebend.",
+  "source_heading": "Quelle",
+  "source_text": "Der Quellcode der Website ist auf [GitHub](https://github.com/Seidenfisch/website) verfügbar."
+}

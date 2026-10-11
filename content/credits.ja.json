@@ -1,0 +1,14 @@
+{
+  "id": "credits",
+  "page_title": "クレジット。",
+  "creative_heading": "クリエイティブな仕事",
+  "creative_text": "ここで紹介されているデザインプロジェクト、写真、執筆、クリエイティブディレクションは、すべてSeidenが手掛けたものです。",
+  "code_heading": "ウェブサイトのコード",
+  "code_text": "このウェブサイトのコードは、AI（OpenAIのChatGPT/Codex）によって作成され、Seidenによる指示と確認が行われました。",
+  "cms_heading": "コンテンツの編集",
+  "cms_text": "[Pages CMS](https://pagescms.org/) は、当サイトの GitHub リポジトリと連携した軽量な編集インターフェースを提供しています。",
+  "translation_heading": "言語と翻訳",
+  "translation_text": "このウェブサイトのマスターバージョンは英語版です。ドイツ語、フランス語、日本語のコンテンツは[DeepL](https://www.deepl.com/)を使用して自動的に翻訳されており、不正確な部分が含まれている可能性があります。各言語版の内容に相違がある場合は、英語のテキストが優先されます。",
+  "source_heading": "出典",
+  "source_text": "このウェブサイトのソースコードは、[GitHub](https://github.com/Seidenfisch/website)で公開されています。"
+}
