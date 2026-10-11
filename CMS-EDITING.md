@@ -6,7 +6,7 @@ The portfolio remains a static GitHub Pages site. [Pages CMS](https://app.pagesc
 
 1. Merge the Pages CMS setup pull request into `main`.
 2. Open [Pages CMS](https://app.pagescms.org/) and choose `Seidenfisch/website` on the `main` branch.
-3. Refresh the repository if it was already open. You should see **Work projects** and **Writing context** in the sidebar.
+3. Refresh the repository if it was already open. You should see **Work projects**, **Writing context**, and **Navigation labels** in the sidebar.
 
 ## Work projects
 
@@ -25,6 +25,17 @@ The Home featured projects remain Brechschnell, AEK II, and RotoLamp; their card
 Open **Writing context** to edit the metadata table and context note for each existing article. The `slug` matches the article's HTML filename and should not be changed.
 
 The **full article text and embedded article images** are still in `writing/*.html`; this initial CMS setup does not turn long-form articles into rich-text CMS entries.
+
+## Navigation labels
+
+Open **Navigation labels** to edit the buttons in the header for **Home**, **Work**, **Writing**, **About**, and **Say hello**.
+
+- Each button has an English master label and separate German, French, and Japanese labels. You can choose the wording independently in each language.
+- **Show button** hides a button in all languages without erasing its labels. Its link remains unchanged if you show it again.
+- Only labels and visibility are editable; navigation destinations stay fixed, and the button order is unchanged.
+- These short interface labels are **manually managed**, not processed by the DeepL content workflow. Changing the English wording will not overwrite your other languages, and automatic translation runs will not overwrite your choices.
+- If a translated label is blank, the English label is used as a fallback.
+- If JavaScript is disabled or settings cannot be loaded, the existing HTML navigation labels are shown.
 
 ## Publishing
 
